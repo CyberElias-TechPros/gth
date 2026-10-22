@@ -350,6 +350,7 @@ function footer() {
 							<li><a href="restaurant.html" class="py-2 d-block">Dining</a></li>
 							<li><a href="events.html" class="py-2 d-block">Events &amp; the Hall</a></li>
 							<li><a href="gallery.html" class="py-2 d-block">Gallery</a></li>
+							<li><a href="archive.html" class="py-2 d-block">Archive photographs</a></li>
 							<li><a href="about.html" class="py-2 d-block">About us</a></li>
 						</ul>
 					</div>
@@ -1543,8 +1544,9 @@ ${pageHero({
 			<div class="gallery-grid gallery-grid-4" id="gallery-grid">
 ${tiles}
 			</div>
-			<p class="small text-muted text-center mt-4 mb-0">Click any image to open it full size. Images marked as rooms
-				and public spaces are illustrative of the hotel’s interiors.</p>
+			<p class="small text-muted text-center mt-4 mb-0">Click any image to open it full size. The marketing imagery
+				on this page is illustrative of the hotel’s interiors — the <a href="archive.html">archive page</a> has
+				the genuine photographs of the building from before the rebrand.</p>
 		</div>
 	</section>
 ${ctaBand()}
@@ -1794,7 +1796,10 @@ ${preview}
 							deliberately <strong>not</strong> been used anywhere on this site.</p>
 						<p class="mb-0">For completeness: the address 273/274 Aba Road previously traded as
 							<strong>Claridon Hotels &amp; Resorts</strong>, and older listings under that name still exist
-							online. Those listings are not the source of anything shown here.</p>
+							online. Its photographs are the only genuine pictures of the building we could verify, so they
+							are published — clearly labelled as archive material — on the
+							<a href="archive.html">archive page</a>. Nothing else on this site is drawn from those older
+							listings.</p>
 					</div>
 				</div>
 			</div>
@@ -2420,6 +2425,197 @@ ${footer()}`;
   });
 }
 
+
+/* ------------------------------------------------------------------ *
+ *  ARCHIVE — genuine photographs of 273/274 Aba Road from before the
+ *  Grand Tokyu rebrand (Claridon Hotels & Resorts era). Kept separate
+ *  from the illustrative marketing imagery and labelled as such.
+ * ------------------------------------------------------------------ */
+const ARCHIVE = [
+  {
+    img: 'images/archive/claridon-courtyard-2017.jpg',
+    title: 'The building, from the inside',
+    note: 'The courtyard well: guest-room balconies, the covered walkway and the pool below, with the property’s distinctive red-roofed crown structure in the middle of the block.',
+    tag: 'Building'
+  },
+  {
+    img: 'images/archive/claridon-pool-2017.jpg',
+    title: 'The courtyard pool',
+    note: 'The small pool sits in the centre of the block, surrounded by the room wings — the same arrangement described in older guest reviews of the property.',
+    tag: 'Pool',
+    small: true
+  },
+  {
+    img: 'images/archive/claridon-lobby-2017.jpg',
+    title: 'Lobby & reception',
+    note: 'Reception and the lounge areas, with the glass-topped tables that ran through the lobby. Full-height windows look onto the courtyard.',
+    tag: 'Reception'
+  },
+  {
+    img: 'images/archive/claridon-restaurant-2017.jpg',
+    title: 'The restaurant',
+    note: 'The dining room, laid with white-covered tables and dark chairs, with the bar and a television at the far end of the room.',
+    tag: 'Restaurant'
+  },
+  {
+    img: 'images/archive/claridon-double-room-2017.jpg',
+    title: 'A double room',
+    note: 'A guest room in the Claridon years: two beds, dark timber headboard and nightstand, tiled floor and a rug.',
+    tag: 'Rooms'
+  },
+  {
+    img: 'images/archive/claridon-room-2017.jpg',
+    title: 'Desk & bed',
+    note: 'The same room category from another angle — work desk, wall-mounted television and the room’s dressing area.',
+    tag: 'Rooms'
+  },
+  {
+    img: 'images/archive/claridon-bathroom-2017.jpg',
+    title: 'The bathroom',
+    note: 'Tiled bathroom with a shower over the bath, a vanity and the mirror lighting typical of the period.',
+    tag: 'Rooms'
+  }
+];
+
+function buildArchive() {
+  const tiles = ARCHIVE.map(
+    (a) => `
+				<div class="col-md-6 ftco-animate mb-4">
+					<figure class="archive-tile${a.small ? ' archive-tile-small' : ''}">
+						<a href="${a.img}" class="archive-img image-popup" style="background-image:url(${a.img});">
+							<span class="archive-badge">Archive photo</span>
+						</a>
+						<figcaption>
+							<span class="dish-tag">${a.tag}</span>
+							<h3>${a.title}</h3>
+							<p class="mb-0">${a.note}</p>
+						</figcaption>
+					</figure>
+				</div>`
+  ).join('');
+
+  const html = `${head({
+    title: 'Archive photographs of the building',
+    description:
+      'Genuine photographs of 273/274 Aba Road, Port Harcourt, taken when the property traded as Claridon Hotels & Resorts — the building Grand Tokyu Hotel now occupies.',
+    active: 'archive'
+  })}
+
+${pageHero({
+    image: 'images/archive/claridon-lobby-2017.jpg',
+    crumbs: [
+      { label: 'Home', href: 'index.html' },
+      { label: 'About', href: 'about.html' },
+      { label: 'Archive' }
+    ],
+    title: 'The building, before the name changed',
+    subtitle: 'Real photographs of 273/274 Aba Road — from its Claridon Hotels &amp; Resorts years.'
+  })}
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+				<div class="col-lg-9 heading-section text-center ftco-animate">
+					<span class="subheading">Why these photos exist</span>
+					<h2 class="mb-4">The only pictures of this address we could actually verify</h2>
+					<p>Grand Tokyu Hotel’s own website is currently offline and it publishes no photo library, and its
+						Tripadvisor listing has no photos or reviews yet. But the address has a history: 273/274 Aba Road
+						traded for years as <strong>Claridon Hotels &amp; Resorts</strong>, and a set of its photographs
+						survives on Tripadvisor and the OTAs.</p>
+					<p class="mb-0">They are published here — plainly labelled — because they are the only genuine
+						photographs of the building we could find. They show the property as it was, not necessarily as it
+						is today: Grand Tokyu has since refurbished and rebranded it.</p>
+				</div>
+			</div>
+
+			<div class="archive-warning ftco-animate mb-5">
+				<span class="icon-info-circle"></span>
+				<div>
+					<p class="mb-0"><strong>Read this before you book on the strength of these pictures.</strong> These are
+						archive photographs of the building from the Claridon era. Room finishes, furniture, the restaurant
+						and the pool area may all have changed since. For how the hotel presents itself now, see the
+						<a href="rooms.html">rooms</a> and <a href="gallery.html">gallery</a> pages — and note that the
+						marketing imagery there is explicitly illustrative.</p>
+				</div>
+			</div>
+
+			<div class="row">
+${tiles}
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="heading-section mb-4 ftco-animate">
+						<span class="subheading">Provenance</span>
+						<h2>Where each photo comes from</h2>
+					</div>
+					<div class="table-responsive ftco-animate">
+						<table class="table facts-table sources-table">
+							<thead>
+								<tr><th>Photograph</th><th>Source</th><th>What we know</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Courtyard, pool and rooms</td>
+									<td>Zenhotels listing for Claridon Hotels &amp; Resorts, Port Harcourt</td>
+									<td><span class="tag-ok">Same address</span> 273/274 Aba Road</td>
+								</tr>
+								<tr>
+									<td>Lobby, restaurant, two double rooms and the bathroom</td>
+									<td>Tripadvisor property photographs, Claridon Hotels &amp; Resorts (<code>d2177947</code>) — traveller-submitted, 2017</td>
+									<td><span class="tag-ok">Same address</span> reviewed by guests in 2015–2017</td>
+								</tr>
+								<tr>
+									<td>Date of the photographs</td>
+									<td>2017 (Tripadvisor uploads) and the Claridon trading era (property founded 2009)</td>
+									<td><span class="tag-mid">Archive</span> not current</td>
+								</tr>
+								<tr>
+									<td>Brand under which they were taken</td>
+									<td>Claridon Hotels &amp; Resorts — the hotel’s earlier identity at the same address</td>
+									<td><span class="tag-mid">Pre-rebrand</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="row mt-4">
+						<div class="col-md-6 ftco-animate">
+							<div class="note-card mb-4">
+								<h3>What we did <em>not</em> use</h3>
+								<p class="mb-0">Photographs of <strong>Tokyu Grand Hotel</strong> off 22 Stadium Road — a
+									separate hotel about 4&nbsp;km away — or of any other Port Harcourt property whose
+									listings happened to appear in the same searches. Where a photo could not be tied to
+									273/274 Aba Road, it was discarded.</p>
+							</div>
+						</div>
+						<div class="col-md-6 ftco-animate">
+							<div class="note-card mb-4">
+								<h3>Have current photographs?</h3>
+								<p class="mb-0">Send them to the hotel, or drop them into
+									<code>images/official/</code> in this project and follow <code>MEDIA.md</code>. They can
+									replace both the archive set and the illustrative imagery in a single rebuild.</p>
+							</div>
+						</div>
+					</div>
+
+					<p class="small text-muted mb-0">Photographs remain the copyright of their owners and are reproduced
+						here at reduced size for reference and identification only. If you own one of these images and
+						would like it removed, contact the site owner and it will be taken down.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+${ctaBand()}
+${footer()}`;
+
+  writePage('archive.html', html);
+}
+
 /* ------------------------------------------------------------------ *
  *  BUILD
  * ------------------------------------------------------------------ */
@@ -2429,6 +2625,7 @@ buildRooms();
 buildDining();
 buildEvents();
 buildGallery();
+buildArchive();
 buildAbout();
 buildBooking();
 buildContact();

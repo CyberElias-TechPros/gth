@@ -843,3 +843,45 @@ input[type="date"] { min-height: 46px; }
   border-radius: 3px;
   font-size: 12.5px;
 }
+
+/* ---------- archive page ---------- */
+.archive-tile { margin: 0; background: #fff; border: 1px solid var(--line); }
+.archive-img {
+  display: block;
+  position: relative;
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--sand);
+}
+.col-lg-12 .archive-img { height: 460px; }
+.archive-tile-small .archive-img { height: 240px; background-size: contain; background-repeat: no-repeat; }
+.archive-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(20, 22, 21, .82);
+  color: #fff;
+  font-size: 9.5px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 6px 11px;
+  border-radius: 2px;
+}
+.archive-tile figcaption { padding: 22px 24px 24px; }
+.archive-tile h3 { font-size: 20px; margin: 6px 0 8px; }
+.archive-tile p { font-size: 14px; color: #6b7773; }
+.archive-warning {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fdf6e7;
+  border-left: 3px solid var(--gold);
+  padding: 22px 24px;
+}
+.archive-warning .icon { color: var(--gold); font-size: 18px; margin-top: 3px; }
+.archive-warning p { font-size: 14px; margin: 0; color: #5a5343; }
+@media (max-width: 767.98px) {
+  .archive-img, .col-lg-12 .archive-img { height: 240px; }
+}

@@ -26,6 +26,7 @@ python3 -m http.server 8000
 | `restaurant.html` | Restaurant, rooftop bar and poolside; menu; hours; private dining |
 | `events.html` | The Hall — capacity, layouts, inclusions and an event enquiry form |
 | `gallery.html` | Filterable gallery (hotel, rooms, rooftop & pool, events & dining) with lightbox |
+| `archive.html` | Genuine archive photographs of 273/274 Aba Road from the building's Claridon Hotels & Resorts years, with provenance and a "not current" warning |
 | `about.html` | Story, values, fact table, map, directions, FAQs, sourcing note |
 | `booking.html` | Reservation request form that hands off to WhatsApp or email, plus rates |
 | `contact.html` | Contact cards, map, directions and a neighbourhood guide |
@@ -86,9 +87,14 @@ page that mentions money.
   — it shows "No photos for this property yet".
 - **No OTA listing** with photography was found for Grand Tokyu Hotel (Aba Road).
 
-So the site ships with a set of AI-generated images for the exterior, lobby, rooftop, five room categories
-and The Hall, plus the template's own stock photography for supporting shots — all served locally from
-`images/` and optimised. `MEDIA.md` lists every file and its origin, and `images/official/README.md`
+So the site ships with **two clearly separated sets**:
+
+1. **Illustrative marketing imagery** (AI-generated) for the exterior, lobby, rooftop, five room categories
+   and The Hall, plus the template's own stock photography for supporting shots — served from `images/`.
+2. **Real archive photographs of the building** — the only genuine pictures of 273/274 Aba Road we could
+   verify, taken when it traded as Claridon Hotels & Resorts. They live in `images/archive/` and are shown
+   on `archive.html` behind an "Archive photo" badge, with a provenance table, a "this is not current
+   photography" warning and a copyright/removal note. They are *not* mixed into the marketing pages. `MEDIA.md` lists every file and its origin, and `images/official/README.md`
 explains exactly which filename to replace with which official photograph (then re-run
 `node tools/build.js`).
 

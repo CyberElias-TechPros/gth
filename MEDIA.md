@@ -21,6 +21,25 @@ The imagery is **illustrative, not official photography of the property**:
 The site itself says so: the footer carries a “photography is illustrative” line, and the About page
 explains it under *About this site*.
 
+## Archive photographs (real, but not current)
+
+`images/archive/` holds genuine photographs of 273/274 Aba Road from before the Grand Tokyu rebrand, when
+the property traded as **Claridon Hotels & Resorts**. They are the only photos of this building we could
+verify, and they are published on `archive.html` only — never mixed into the marketing pages.
+
+| File | Shows | Source |
+| --- | --- | --- |
+| `claridon-courtyard-2017.jpg` | Courtyard, balconies, pool and the red-roofed crown structure | Zenhotels listing for Claridon Hotels & Resorts, Port Harcourt (cross-checked against the Tripadvisor courtyard shot) |
+| `claridon-pool-2017.jpg` | The courtyard pool (low resolution — displayed small, contained) | Tripadvisor property photo, Claridon `d2177947` |
+| `claridon-lobby-2017.jpg` | Lobby and reception | Claridon listing interior shot (also used as the archive hero) |
+| `claridon-restaurant-2017.jpg` | The dining room | Tripadvisor property photo, Claridon `d2177947` |
+| `claridon-double-room-2017.jpg` | Twin/double guest room | Tripadvisor property photo, Claridon `d2177947` |
+| `claridon-room-2017.jpg` | Bedroom with desk and television | Tripadvisor property photo, Claridon `d2177947` |
+| `claridon-bathroom-2017.jpg` | Bathroom with shower over bath | Tripadvisor property photo, Claridon `d2177947` |
+
+Deleting the `images/archive/` folder plus the `ARCHIVE` array in `tools/build.js` removes the archive page
+cleanly; deleting `buildArchive()` from the build list removes the page itself.
+
 ## Why there is no official photography
 
 Checked during build (July 2026):

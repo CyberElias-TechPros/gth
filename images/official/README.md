@@ -20,4 +20,7 @@ Suggested names, matching the pages that need them:
 | `apartment-kitchen.jpg` | The Apartment gallery |
 | `hall.jpg` | Events hero, gallery |
 
-See `../../MEDIA.md` for the full list of current (illustrative) images and why they were used.
+Once official photography is in place, also remove or retire the archive page (`archive.html` and the
+`ARCHIVE` array in `tools/build.js`) so nobody compares old Claridon-era photos with current rooms.
+
+See `../../MEDIA.md` for the full list of current (illustrative) and archive images, and why they were used.
