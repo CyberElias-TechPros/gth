@@ -24,27 +24,28 @@ explains it under *About this site*.
 ## Archive photographs (real, but not current)
 
 `images/archive/` holds **twelve genuine photographs of 273/274 Aba Road** from before the Grand Tokyu
-rebrand, when the property traded as **Claridon Hotels & Resorts**. They are the only photos of this
-building we could verify, and they are used in two ways:
+rebrand, when the property at that address traded as **Claridon Hotels & Resorts** (the address match is
+the basis for that — see the caution below). They are the only photos of this building we could verify.
 
-1. **As content** — the archive page, plus "real building" strips on the home page, rooms page and about page.
-2. **As context** — the hero images on the About, Dining, Contact and Booking pages.
+**They are confined to `archive.html`.** No marketing page uses them: the home, rooms, dining, gallery,
+about, contact and booking pages are entirely Grand Tokyu / illustrative imagery, so nothing on the site
+presents another hotel's photographs as the brand's own. The archive page badges every photo, lists each
+source and era, and opens with a "not current photography" warning.
 
-Every one of them is marked: archive tiles carry an "Archive photo" badge, the hero images carry an
-"Archive photograph" ribbon along the bottom edge, and each archive page entry lists its source and era.
-They are never presented as current marketing photography.
+The `archive: true` ribbon option in `pageHero()` and the `.archive-ribbon` class still exist if you ever
+want to surface an archive image on a page again — they are simply unused at present.
 
 | File | Shows | Source |
 | --- | --- | --- |
-| `claridon-exterior-2016.jpg` | The Aba Road frontage and its two red arched gates | Claridon Hotels & Resorts gallery (Zenhotels) — used as the Contact hero |
-| `claridon-courtyard-2017.jpg` | Courtyard, balconies, pool and the red-roofed crown structure | Claridon gallery (Zenhotels), cross-checked against the Tripadvisor courtyard shot — used as the About hero and on Home |
+| `claridon-exterior-2016.jpg` | The Aba Road frontage and its two red arched gates | Claridon Hotels & Resorts gallery (Zenhotels) |
+| `claridon-courtyard-2017.jpg` | Courtyard, balconies, pool and the red-roofed crown structure | Claridon gallery (Zenhotels), cross-checked against the Tripadvisor courtyard shot |
 | `claridon-pool-2017.jpg` | The courtyard pool (184 px — shown contained, never stretched) | Tripadvisor property photo, Claridon `d2177947` |
-| `claridon-lobby-2017.jpg` | Lobby and lounge | Claridon gallery (OTA set) — used on Home, About and the archive page |
+| `claridon-lobby-2017.jpg` | Lobby and lounge | Claridon gallery (OTA set) |
 | `claridon-reception-2017.jpg` | Reception seen from the mezzanine | Claridon gallery (Zenhotels) |
-| `claridon-restaurant-2017.jpg` | The dining room | Tripadvisor property photo, Claridon `d2177947` — used as the Dining hero and on Home |
-| `claridon-room-classic-2017.jpg` | Standard room | Claridon gallery (Destinia / OTA set) — used on Rooms, Gallery and About |
-| `claridon-room-suite-2017.jpg` | Larger room with desk | Claridon gallery (Destinia / OTA set) — used on Rooms and Gallery |
-| `claridon-living-room-2017.jpg` | Suite living area | Claridon gallery (Zenhotels) — used on Rooms and Gallery |
+| `claridon-restaurant-2017.jpg` | The dining room | Tripadvisor property photo, Claridon `d2177947` |
+| `claridon-room-classic-2017.jpg` | Standard room | Claridon gallery (Destinia / OTA set) |
+| `claridon-room-suite-2017.jpg` | Larger room with desk | Claridon gallery (Destinia / OTA set) |
+| `claridon-living-room-2017.jpg` | Suite living area | Claridon gallery (Zenhotels) |
 | `claridon-double-room-2017.jpg` | Twin room | Tripadvisor property photo, Claridon `d2177947` |
 | `claridon-room-2017.jpg` | Bedroom with desk and television | Tripadvisor property photo, Claridon `d2177947` |
 | `claridon-bathroom-2017.jpg` | Bathroom with shower over bath | Tripadvisor property photo, Claridon `d2177947` |
@@ -53,6 +54,24 @@ To retire the archive material once official photography arrives: empty the `ARC
 `tools/build.js`, remove the `archive: true` flags and the `previewItems` archive entries, drop the
 "Archive" filter from `buildGallery()`, and delete `buildArchive()` from the build list — then delete
 `images/archive/`. Re-run `node tools/build.js`.
+
+### Caution: what the Claridon link actually rests on
+
+Both hotels are listed at **273/274 Aba Road**:
+
+| Property | Address on public listings |
+| --- | --- |
+| Grand Tokyu Hotel | 273/274 Aba Road, Port Harcourt 500272 (Tripadvisor `d33282887`) |
+| Claridon Hotels & Resorts | 273/274 Aba Road, Port Harcourt 500211 (KAYAK, Expedia, hotelsclick, Destinia, guestreservations, trivago) |
+
+The same, unusually specific two-number plot on the same road is the whole basis for treating them as the
+same building under a new brand. No source states the rebrand outright — the hotel's site is offline and
+the Wayback Machine was unavailable — so treat it as a strong inference, not a confirmed fact. Postal codes
+differ between the two sets of listings (500211 vs 500272), which is a further reason for caution. If the
+hotel confirms it is a different property, delete `images/archive/` and the archive page.
+
+Also note there is a genuinely unrelated **Tokyu Grand Hotel** off 22 Stadium Road — hotels.ng's 2018 guide
+lists it separately from Claridon at Aba Road, which is how we know the two are different.
 
 ## Why there is no official photography
 

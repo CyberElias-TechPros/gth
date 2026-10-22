@@ -945,63 +945,6 @@ ${notesHtml}
 		</div>
 	</section>
 
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-between align-items-end mb-4">
-				<div class="col-md-8 heading-section ftco-animate">
-					<span class="subheading">The real building</span>
-					<h2 class="mb-2">Photographs of 273/274 Aba Road</h2>
-					<p class="mb-0">The hotel has no current photo library online, so these are genuine photographs of the
-						property from its Claridon Hotels &amp; Resorts years — the same building you will arrive at. They are
-						archive images, not current marketing photography.</p>
-				</div>
-				<div class="col-md-3 text-md-right ftco-animate mb-3 mb-md-0">
-					<a href="archive.html" class="btn btn-outline-dark rounded-pill px-4">Full archive</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 d-flex ftco-animate">
-					<figure class="archive-tile w-100">
-						<a href="images/archive/claridon-courtyard-2017.jpg" class="archive-img image-popup" style="background-image:url(images/archive/claridon-courtyard-2017.jpg);">
-							<span class="archive-badge">Archive photo</span>
-						</a>
-						<figcaption>
-							<span class="dish-tag">Building</span>
-							<h3>The courtyard</h3>
-							<p class="mb-0">Rooms wrap around a central courtyard and pool, with the property’s red-roofed crown structure at its heart.</p>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<figure class="archive-tile w-100">
-						<a href="images/archive/claridon-lobby-2017.jpg" class="archive-img image-popup" style="background-image:url(images/archive/claridon-lobby-2017.jpg);">
-							<span class="archive-badge">Archive photo</span>
-						</a>
-						<figcaption>
-							<span class="dish-tag">Reception</span>
-							<h3>The lobby</h3>
-							<p class="mb-0">Full-height windows, marble floors and the lounge seating that greets you at the door.</p>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<figure class="archive-tile w-100">
-						<a href="images/archive/claridon-restaurant-2017.jpg" class="archive-img image-popup" style="background-image:url(images/archive/claridon-restaurant-2017.jpg);">
-							<span class="archive-badge">Archive photo</span>
-						</a>
-						<figcaption>
-							<span class="dish-tag">Restaurant</span>
-							<h3>The dining room</h3>
-							<p class="mb-0">Where the restaurant sits today: white-covered tables, dark chairs and the bar at the far end.</p>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-			<p class="small text-muted mt-3 mb-0">These photographs show the property as it was before the rebrand — finishes and furniture
-				may have changed. Sources and dates for each image are listed on the <a href="archive.html">archive page</a>.</p>
-		</div>
-	</section>
-
 	<section class="ftco-section bg-light">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-2">
@@ -1104,42 +1047,6 @@ ${rateRows}
 	</section>
 
 	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-between align-items-end mb-4">
-				<div class="col-md-8 ftco-animate">
-					<span class="subheading">From the archive</span>
-					<h2 class="mb-2">What the rooms looked like</h2>
-					<p class="mb-0">Genuine photographs from the building’s Claridon Hotels &amp; Resorts years. The hotel has
-						refurbished since, so treat these as a sense of scale and layout rather than the current finish.</p>
-				</div>
-				<div class="col-md-3 text-md-right ftco-animate mb-3 mb-md-0">
-					<a href="archive.html" class="btn btn-outline-dark rounded-pill px-4">All archive photos</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 d-flex ftco-animate">
-					<figure class="archive-tile w-100">
-						<a href="images/archive/claridon-room-classic-2017.jpg" class="archive-img image-popup" style="background-image:url(images/archive/claridon-room-classic-2017.jpg);"><span class="archive-badge">Archive photo</span></a>
-						<figcaption><span class="dish-tag">Standard</span><h3>A standard room</h3></figcaption>
-					</figure>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<figure class="archive-tile w-100">
-						<a href="images/archive/claridon-room-suite-2017.jpg" class="archive-img image-popup" style="background-image:url(images/archive/claridon-room-suite-2017.jpg);"><span class="archive-badge">Archive photo</span></a>
-						<figcaption><span class="dish-tag">Larger rooms</span><h3>Bed, desk and bench</h3></figcaption>
-					</figure>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<figure class="archive-tile w-100">
-						<a href="images/archive/claridon-living-room-2017.jpg" class="archive-img image-popup" style="background-image:url(images/archive/claridon-living-room-2017.jpg);"><span class="archive-badge">Archive photo</span></a>
-						<figcaption><span class="dish-tag">Suites</span><h3>A sitting room</h3></figcaption>
-					</figure>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section bg-light">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-10">
@@ -1330,12 +1237,10 @@ function buildDining() {
   })}
 
 ${pageHero({
-    image: 'images/archive/claridon-restaurant-2017.jpg',
+    image: 'images/resto.jpg',
     crumbs: [{ label: 'Home', href: 'index.html' }, { label: 'Dining' }],
     title: 'Dining',
-    subtitle: 'Local and continental cooking, a rooftop bar and a poolside that is hard to leave.',
-    archive: true,
-    archiveLabel: 'Archive photograph of the dining room — Claridon Hotels &amp; Resorts era, before the rebrand'
+    subtitle: 'Local and continental cooking, a rooftop bar and a poolside that is hard to leave.'
   })}
 
 	<section class="ftco-section">
@@ -1598,7 +1503,7 @@ ${footer()}`;
  *  GALLERY
  * ------------------------------------------------------------------ */
 function buildGallery() {
-  const groups = ['Hotel', 'Rooms', 'Rooftop & pool', 'Events & dining', 'Archive'];
+  const groups = ['Hotel', 'Rooms', 'Rooftop & pool', 'Events & dining'];
   const filters = groups
     .map(
       (g, i) =>
@@ -1610,14 +1515,6 @@ function buildGallery() {
     (item) => `
 					<a href="${item.img}" class="gallery-item image-popup" data-group="${item.group.replace(/&/g, '&amp;')}" style="background-image:url(${item.img});">
 						<span class="cap">${item.cap}</span>
-					</a>`
-  ).join('');
-
-  const archiveTiles = ARCHIVE.map(
-    (a) => `
-					<a href="${a.img}" class="gallery-item image-popup gallery-item-archive" data-group="Archive" style="background-image:url(${a.img});">
-						<span class="archive-badge">Archive photo</span>
-						<span class="cap">${a.title}</span>
 					</a>`
   ).join('');
 
@@ -1643,18 +1540,15 @@ ${pageHero({
 						<button class="filter-btn is-active" data-filter="all">Everything</button>
 						${filters}
 					</div>
-					<p class="small text-muted mt-3 mb-0">Filter by <strong>Archive</strong> to see only the genuine
-						photographs of the building.</p>
+
 				</div>
 			</div>
 			<div class="gallery-grid gallery-grid-4" id="gallery-grid">
 ${tiles}
-${archiveTiles}
 			</div>
-			<p class="small text-muted text-center mt-4 mb-0">Click any image to open it full size. The marketing imagery
-				on this page is illustrative of the hotel’s interiors. The tiles marked <strong>Archive photo</strong> are
-				genuine photographs of the building from its Claridon Hotels &amp; Resorts years — provenance for each is on
-				the <a href="archive.html">archive page</a>.</p>
+			<p class="small text-muted text-center mt-4 mb-0">Click any image to open it full size. The photography on this
+				page is illustrative of the hotel’s interiors. Separately, there is a small
+				<a href="archive.html">archive page</a> of older photographs of the building, kept for reference.</p>
 		</div>
 	</section>
 ${ctaBand()}
@@ -1724,23 +1618,8 @@ function buildAbout() {
 				</div>`
   ).join('');
 
-  const previewItems = [
-    ['images/archive/claridon-courtyard-2017.jpg', 'Archive — the courtyard', true],
-    ['images/archive/claridon-lobby-2017.jpg', 'Archive — the lobby', true],
-    ['images/archive/claridon-restaurant-2017.jpg', 'Archive — the restaurant', true],
-    ['images/archive/claridon-room-classic-2017.jpg', 'Archive — a standard room', true],
-    ['images/gth-rooftop.jpg', 'The rooftop today', false],
-    ['images/gth-apartment-living.jpg', 'The Apartment today', false],
-    ['images/gth-hall.jpg', 'The Hall today', false],
-    ['images/gth-exterior.jpg', 'Illustrative exterior', false]
-  ];
-  const preview = previewItems
-    .map(
-      ([img, cap, isArchive]) =>
-        `<a href="${img}" class="gallery-item image-popup" style="background-image:url(${img});">${
-          isArchive ? '<span class="archive-badge">Archive photo</span>' : ''
-        }<span class="cap">${cap}</span></a>`
-    )
+  const preview = GALLERY.slice(0, 8)
+    .map((g) => `<a href="${g.img}" class="gallery-item image-popup" style="background-image:url(${g.img});"><span class="cap">${g.cap}</span></a>`)
     .join('');
 
   const html = `${head({
@@ -1751,11 +1630,10 @@ function buildAbout() {
   })}
 
 ${pageHero({
-    image: 'images/archive/claridon-courtyard-2017.jpg',
+    image: 'images/gth-lobby.jpg',
     crumbs: [{ label: 'Home', href: 'index.html' }, { label: 'About us' }],
     title: 'About the hotel',
-    subtitle: 'Hospitality meets heart on Aba Road.',
-    archive: true
+    subtitle: 'Hospitality meets heart on Aba Road.'
   })}
 
 	<section class="ftco-section">
@@ -1778,11 +1656,9 @@ ${pageHero({
 				</div>
 				<div class="col-lg-6 ftco-animate">
 					<div class="stacked-imgs stacked-imgs-tall">
-						<div class="img-main" style="background-image:url(images/archive/claridon-lobby-2017.jpg);"></div>
-						<div class="img-small" style="background-image:url(images/archive/claridon-exterior-2016.jpg);"></div>
+						<div class="img-main" style="background-image:url(images/gth-exterior.jpg);"></div>
+						<div class="img-small" style="background-image:url(images/gth-lobby.jpg);"></div>
 					</div>
-					<p class="small text-muted mt-2">Above: archive photographs of the building from its Claridon Hotels
-						&amp; Resorts years — <a href="archive.html">see the full archive</a>.</p>
 				</div>
 			</div>
 		</div>
@@ -1995,12 +1871,10 @@ function buildBooking() {
   })}
 
 ${pageHero({
-    image: 'images/archive/claridon-pool-2017.jpg',
+    image: 'images/bg_2.jpg',
     crumbs: [{ label: 'Home', href: 'index.html' }, { label: 'Book a room' }],
     title: 'Book your stay',
-    subtitle: 'Tell us your dates — the front desk replies personally, day or night.',
-    archive: true,
-    archiveLabel: 'Archive photograph of the courtyard pool — Claridon Hotels &amp; Resorts era'
+    subtitle: 'Tell us your dates — the front desk replies personally, day or night.'
   })}
 
 	<section class="ftco-section">
@@ -2152,12 +2026,10 @@ function buildContact() {
   })}
 
 ${pageHero({
-    image: 'images/archive/claridon-exterior-2016.jpg',
+    image: 'images/gth-exterior.jpg',
     crumbs: [{ label: 'Home', href: 'index.html' }, { label: 'Contact' }],
     title: 'Contact us',
-    subtitle: 'In the heart of Port Harcourt — and easy to reach from anywhere in it.',
-    archive: true,
-    archiveLabel: 'Archive photograph of the Aba Road frontage — the red gates are still the landmark to look for'
+    subtitle: 'In the heart of Port Harcourt — and easy to reach from anywhere in it.'
   })}
 
 	<section class="ftco-section">
