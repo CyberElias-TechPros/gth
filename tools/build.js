@@ -437,6 +437,7 @@ function pageHero({ image, crumbs = [], title, subtitle = '', archive = false, a
   return `
 	<div class="hero-wrap hero-sm" style="background-image: url('${image}');">
 		<div class="overlay"></div>
+		${archive ? `<div class="archive-ribbon"><span class="icon-camera"></span> ${archiveLabel || 'Archive photograph — the building in its Claridon Hotels &amp; Resorts years, before the Grand Tokyu rebrand'}</div>` : ''}
 		<div class="container">
 			<div class="row no-gutters slider-text d-flex align-items-center justify-content-center">
 				<div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
@@ -1997,7 +1998,9 @@ ${pageHero({
     image: 'images/archive/claridon-pool-2017.jpg',
     crumbs: [{ label: 'Home', href: 'index.html' }, { label: 'Book a room' }],
     title: 'Book your stay',
-    subtitle: 'Tell us your dates — the front desk replies personally, day or night.'
+    subtitle: 'Tell us your dates — the front desk replies personally, day or night.',
+    archive: true,
+    archiveLabel: 'Archive photograph of the courtyard pool — Claridon Hotels &amp; Resorts era'
   })}
 
 	<section class="ftco-section">
@@ -2652,7 +2655,7 @@ function buildArchive() {
   const tiles = ARCHIVE.map(
     (a) => `
 				<div class="col-md-6 ftco-animate mb-4">
-					<figure class="archive-tile${a.small ? ' archive-tile-small' : ''}">
+					<figure class="archive-tile${a.fit === 'contain' ? ' archive-tile-small' : ''}">
 						<a href="${a.img}" class="archive-img image-popup" style="background-image:url(${a.img});">
 							<span class="archive-badge">Archive photo</span>
 						</a>
@@ -2660,6 +2663,7 @@ function buildArchive() {
 							<span class="dish-tag">${a.tag}</span>
 							<h3>${a.title}</h3>
 							<p class="mb-0">${a.note}</p>
+							<p class="archive-source mb-0"><span class="icon-camera"></span> ${a.source}</p>
 						</figcaption>
 					</figure>
 				</div>`
@@ -2694,8 +2698,10 @@ ${pageHero({
 						traded for years as <strong>Claridon Hotels &amp; Resorts</strong>, and a set of its photographs
 						survives on Tripadvisor and the OTAs.</p>
 					<p class="mb-0">They are published here — plainly labelled — because they are the only genuine
-						photographs of the building we could find. They show the property as it was, not necessarily as it
-						is today: Grand Tokyu has since refurbished and rebranded it.</p>
+						photographs of the building we could find. There are ${ARCHIVE.length} of them: the frontage, the
+						courtyard and pool, reception, the restaurant, four room categories, a sitting room and a bathroom.
+						They show the property as it was, not necessarily as it is today: Grand Tokyu has since refurbished
+						and rebranded it.</p>
 				</div>
 			</div>
 
