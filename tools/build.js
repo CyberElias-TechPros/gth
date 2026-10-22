@@ -30,6 +30,8 @@ const SITE = {
   whatsapp: '2349160007896',
   checkin: '12:00',
   checkout: '11:00',
+  checkinText: 'from 12:00 — confirmed with your reservation',
+  checkoutText: 'by 11:00 — confirmed with your reservation',
   maps: 'https://www.google.com/maps/search/?api=1&query=Grand+Tokyu+Hotel+273%2F274+Aba+Road+Port+Harcourt+Nigeria',
   osm: 'https://www.openstreetmap.org/export/embed.html?bbox=6.9955%2C4.8085%2C7.0485%2C4.8435&layer=mapnik&marker=4.8260%2C7.0226'
 };
@@ -192,7 +194,7 @@ const FAQS = [
   },
   {
     q: 'What time is check-in and check-out?',
-    a: 'Check-in is from 12:00 and check-out is by 11:00. Times can differ by rate plan, so confirm with reservations when you book.'
+    a: 'Check-in is generally from 12:00 and check-out by 11:00, but the hotel confirms the exact times with every reservation — please check when you book, especially for late arrivals.'
   },
   {
     q: 'What do rooms cost?',
@@ -204,7 +206,7 @@ const FAQS = [
   },
   {
     q: 'Is there parking and Wi-Fi?',
-    a: 'Wi-Fi is free throughout the hotel and there is on-site parking for guests. Airport pick-up and car hire can be arranged with the front desk.'
+    a: 'Wi-Fi is free throughout the hotel and there is on-site parking for guests. Ask the front desk about airport pick-up and car hire when you book — availability is confirmed with your reservation.'
   },
   {
     q: 'Can you host my event?',
@@ -612,28 +614,60 @@ function buildHome() {
     )
     .join('');
 
-  const ratings = [
-    { platform: 'Google', score: '3.9', outOf: '/ 5', count: '490+ reviews', icon: 'icon-google' },
-    { platform: 'Tripadvisor', score: '4.5', outOf: '/ 5', count: '25 reviews', icon: 'icon-tripadvisor' }
+  const listings = [
+    {
+      icon: 'icon-tripadvisor',
+      name: 'Tripadvisor',
+      status: 'Newly listed',
+      detail: 'The Grand Tokyu Hotel listing at 273/274 Aba Road shows no traveller reviews or photos yet.',
+      href: 'https://www.tripadvisor.com/Hotel_Review-g298363-d33282887-Reviews-Grand_Tokyu_Hotel-Port_Harcourt_Rivers_State.html',
+      cta: 'See the listing'
+    },
+    {
+      icon: 'icon-map-marker',
+      name: 'Google Maps',
+      status: 'Find us',
+      detail: 'Directions, opening hours and the map pin for 273/274 Aba Road, Port Harcourt.',
+      href: SITE.maps,
+      cta: 'Open in Maps'
+    }
   ];
 
-  const ratingsHtml = ratings
+  const listingsHtml = listings
     .map(
-      (r) => `
+      (l) => `
 					<div class="col-md-6 d-flex ftco-animate">
 						<div class="rating-card w-100">
-							<div class="d-flex align-items-center">
-								<span class="${r.icon} rating-icon"></span>
-								<div class="ml-3">
-									<p class="mb-0 rating-name">${r.platform}</p>
-									<p class="mb-0 rating-count">${r.count}</p>
-								</div>
-								<div class="ml-auto text-right">
-									<span class="rating-score">${r.score}</span><span class="rating-out">${r.outOf}</span>
+							<div class="d-flex align-items-start">
+								<span class="${l.icon} rating-icon"></span>
+								<div class="ml-3 flex-grow-1">
+									<p class="mb-0 rating-name">${l.name}</p>
+									<p class="mb-1 rating-count">${l.status}</p>
+									<p class="mb-2 listing-detail">${l.detail}</p>
+									<a class="link-arrow" href="${l.href}" target="_blank" rel="noopener">${l.cta} <span class="icon-long-arrow-right"></span></a>
 								</div>
 							</div>
 						</div>
 					</div>`
+    )
+    .join('');
+
+  const houseNotes = [
+    ['Rooftop bar', '“Our rooftop bar offers breathtaking views of the city, and our elegant reception sets the tone from the moment you arrive.”'],
+    ['The rooms', '“Plush bedding, stylish décor, air-conditioning, and all the essentials for a relaxing stay.”'],
+    ['The bathrooms', '“Sleek and sparkling, featuring rainfall showers, warm lighting, and premium toiletries.”']
+  ];
+
+  const notesHtml = houseNotes
+    .map(
+      ([label, quote]) => `
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="quote-card w-100">
+						<span class="icon-quote-left quote-mark"></span>
+						<p>${quote}</p>
+						<span class="quote-source">${label} — quoted from the hotel’s own description</span>
+					</div>
+				</div>`
     )
     .join('');
 
@@ -684,7 +718,6 @@ function buildHome() {
     telephone: '+2349160007896',
     email: SITE.email,
     priceRange: '₦40,000 – ₦400,000',
-    starRating: { '@type': 'Rating', ratingValue: '4' },
     amenityFeature: [
       'Free Wi-Fi',
       'Outdoor pool',
@@ -894,36 +927,18 @@ ${strip}
 		<div class="container">
 			<div class="row justify-content-center mb-4">
 				<div class="col-md-8 heading-section text-center ftco-animate">
-					<span class="subheading">Guest voices</span>
-					<h2 class="mb-3">What people say</h2>
-					<p class="small mb-0">Ratings as published on Google and Tripadvisor. They change over time — the links below go straight to the source.</p>
+					<span class="subheading">In the hotel’s own words</span>
+					<h2 class="mb-3">Find us, and read about us</h2>
+					<p class="small mb-0">The hotel is a new listing, so there is no published guest score yet — we would
+						rather show you nothing than invent one. The descriptions below are quoted from Grand Tokyu’s own
+						listing.</p>
 				</div>
 			</div>
 			<div class="row">
-${ratingsHtml}
+${listingsHtml}
 			</div>
 			<div class="row mt-4">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="quote-card w-100">
-						<span class="icon-quote-left quote-mark"></span>
-						<p>Warm, personal and genuinely relaxed — the rooftop at sunset is worth the trip on its own.</p>
-						<span class="quote-source">Guest sentiment, rooftop bar</span>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="quote-card w-100">
-						<span class="icon-quote-left quote-mark"></span>
-						<p>The apartment was perfect for our family: two bedrooms, a kitchen and space for the children.</p>
-						<span class="quote-source">Guest sentiment, The Apartment</span>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="quote-card w-100">
-						<span class="icon-quote-left quote-mark"></span>
-						<p>Close to everything on Aba Road, with a front desk that answers at any hour.</p>
-						<span class="quote-source">Guest sentiment, location</span>
-					</div>
-				</div>
+${notesHtml}
 			</div>
 		</div>
 	</section>
@@ -1043,8 +1058,8 @@ ${rateRows}
 						<div class="col-md-6 ftco-animate">
 							<h2 class="mb-4">Good to know</h2>
 							<ul class="info-list">
-								<li><span>Check-in</span> from ${SITE.checkin}</li>
-								<li><span>Check-out</span> by ${SITE.checkout}</li>
+								<li><span>Check-in</span>${SITE.checkinText}</li>
+								<li><span>Check-out</span>${SITE.checkoutText}</li>
 								<li><span>Payment</span> Naira, at the hotel or by transfer</li>
 								<li><span>Front desk</span> open 24 hours</li>
 								<li><span>Wi-Fi</span> free throughout the hotel</li>
@@ -1136,8 +1151,8 @@ ${gallerySlides}
 				<div class="col-md-6 ftco-animate pl-lg-5">
 					<h3 class="mb-4">Booking notes</h3>
 					<ul class="info-list">
-						<li><span>Check-in</span> from ${SITE.checkin}</li>
-						<li><span>Check-out</span> by ${SITE.checkout}</li>
+						<li><span>Check-in</span>${SITE.checkinText}</li>
+						<li><span>Check-out</span>${SITE.checkoutText}</li>
 						<li><span>Reservations</span> ${SITE.phone}</li>
 						<li><span>Email</span> <a href="mailto:${SITE.email}">${SITE.email}</a></li>
 						<li><span>Address</span> ${SITE.address}</li>
@@ -1566,8 +1581,8 @@ function buildAbout() {
     ['Address', SITE.address + ' (' + SITE.postal + ')'],
     ['Reservations', SITE.phone + ' &middot; ' + SITE.phone2],
     ['Email', SITE.email],
-    ['Check-in', 'from ' + SITE.checkin],
-    ['Check-out', 'by ' + SITE.checkout],
+    ['Check-in', SITE.checkinText],
+    ['Check-out', SITE.checkoutText],
     ['Room categories', 'Standard, Classic, Standard Suite, Classic Suite, Apartment'],
     ['Starting rate', money(40000) + ' per night'],
     ['Event space', 'The Hall — up to 200 guests, from ' + money(HALL.from)],
@@ -1705,6 +1720,83 @@ ${factRows}
 			</div>
 			<div class="gallery-grid gallery-grid-4">
 ${preview}
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section bg-light" id="sources">
+		<div class="container">
+			<div class="row justify-content-center mb-4">
+				<div class="col-md-9 heading-section text-center ftco-animate">
+					<span class="subheading">Transparency</span>
+					<h2 class="mb-3">Where these details come from</h2>
+					<p class="small mb-0">This is an independent showcase site, not an official publication. Everything
+						below was taken from public sources, and anything we could not verify is marked as such.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="table-responsive ftco-animate">
+						<table class="table facts-table sources-table">
+							<thead>
+								<tr><th>Detail</th><th>Source</th><th>Confidence</th></tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Name, address, phone numbers, email, room categories, rates, amenities and The Hall</td>
+									<td>grandtokyuhotels.com (the hotel’s own website, July 2026 snapshot)</td>
+									<td><span class="tag-ok">Published by the hotel</span></td>
+								</tr>
+								<tr>
+									<td>Rooftop bar, poolside, 24/7 front desk, restaurant</td>
+									<td>grandtokyuhotels.com — about, rooms and contact pages</td>
+									<td><span class="tag-ok">Published by the hotel</span></td>
+								</tr>
+								<tr>
+									<td>Nearby distances (Pleasure Park 5.5&nbsp;km, Boss Lounge 2.8&nbsp;km, SOK 2.9&nbsp;km) and the street address for listings</td>
+									<td>Tripadvisor listing (d33282887) for 273/274 Aba Road</td>
+									<td><span class="tag-ok">Third-party listing</span></td>
+								</tr>
+								<tr>
+									<td>Airport drive time (~35 minutes) and “5 min from GRA Junction / 10 min from Mile 1 Park”</td>
+									<td>Hotel contact page for the drive times; Tripadvisor for airport distance (13.4&nbsp;mi)</td>
+									<td><span class="tag-mid">Approximate</span></td>
+								</tr>
+								<tr>
+									<td>Check-in / check-out times</td>
+									<td>Not published by the hotel — shown as “confirm with your reservation”</td>
+									<td><span class="tag-low">Unconfirmed</span></td>
+								</tr>
+								<tr>
+									<td>Hall capacity (200 vs 100 guests)</td>
+									<td>Two pages of the hotel’s own site disagree — both figures are shown</td>
+									<td><span class="tag-mid">Conflicting</span></td>
+								</tr>
+								<tr>
+									<td>Guest ratings</td>
+									<td>None published: the Grand Tokyu Hotel Tripadvisor listing has no reviews or photos yet</td>
+									<td><span class="tag-low">Not shown</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-4">
+				<div class="col-lg-10">
+					<div class="note-card note-card-wide ftco-animate">
+						<h3>A note on similar names</h3>
+						<p>Port Harcourt has another, older establishment called <strong>Tokyu Grand Hotel</strong> off 22
+							Stadium Road, about 4&nbsp;km away. It is a <em>different property</em> — a 2-star hotel with 102
+							rooms that opened in 2014. Its room counts, ratings, breakfast times and facilities have
+							deliberately <strong>not</strong> been used anywhere on this site.</p>
+						<p class="mb-0">For completeness: the address 273/274 Aba Road previously traded as
+							<strong>Claridon Hotels &amp; Resorts</strong>, and older listings under that name still exist
+							online. Those listings are not the source of anything shown here.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -1850,8 +1942,8 @@ ${pageHero({
 					<div class="note-card">
 						<h3 class="mb-3">Before you book</h3>
 						<ul class="info-list info-list-tight">
-							<li><span>Check-in</span>from ${SITE.checkin}</li>
-							<li><span>Check-out</span>by ${SITE.checkout}</li>
+							<li><span>Check-in</span>${SITE.checkinText}</li>
+							<li><span>Check-out</span>${SITE.checkoutText}</li>
 							<li><span>Rates</span>Naira, per night</li>
 							<li><span>Payment</span>at the hotel or by transfer</li>
 							<li><span>Rates shown</span>starting prices, not live availability</li>
@@ -1973,8 +2065,8 @@ ${pageHero({
 					<span class="subheading">Getting here</span>
 					<h2 class="mb-4">Five minutes from GRA Junction</h2>
 					<p>By car, the hotel is about five minutes from GRA Junction and ten minutes from Mile 1 Park.
-						Port Harcourt International Airport is roughly 35 minutes away by taxi — ask the front desk to
-						arrange a pick-up and we will meet you at arrivals.</p>
+						Port Harcourt International Airport is roughly 35 minutes away by taxi. Ask the front desk about
+						airport pick-up when you book — availability is confirmed with your reservation.</p>
 					<ul class="info-list">
 						<li><span>Address</span>${SITE.address}</li>
 						<li><span>Landmark</span>On Aba Road, near GRA Junction</li>
@@ -2098,7 +2190,8 @@ const ARTICLE_BODIES = {
 							roughly 35 minutes by taxi depending on traffic. Sam Mbakwe International Cargo Airport, in
 							Owerri, is a much longer drive — around 70 kilometres, or close to two hours.</p>
 						<p>If you would rather not negotiate a fare at arrivals, call the front desk before you fly and ask
-							them to arrange a pick-up. The team can also organise car hire for the length of your stay.</p>
+							them whether a pick-up can be arranged. Car hire is worth asking about at the same time —
+							availability is confirmed with your reservation.</p>
 
 						<h2>By car</h2>
 						<ul>

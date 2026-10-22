@@ -75,12 +75,33 @@ page that mentions money.
 
 ## Media
 
-- Page photography is illustrative: a set of original AI-generated images for the hotel exterior, lobby,
-  rooftop, rooms, suites, the apartment, the hall and the banquettes plus the template's own photography,
-  all optimised and served locally from `images/`.
-- The hotel does not publish a usable media library, so no third-party hotel photography was copied.
-  Swap in official photography by replacing the files in `images/` (same filenames) or by editing the
-  image paths in `tools/build.js`.
+**The photography on this site is illustrative, not official.** Here is what the research found:
+
+- The hotel's own website (`grandtokyuhotels.com`) is **offline** — it now serves an empty Apache directory
+  index, and `/about-us/`, `/wp-content/uploads/` and `/wp-json/wp/v2/media` all return 404, so its
+  WordPress gallery cannot be retrieved.
+- The **Wayback Machine was unavailable** ("Temporarily Offline") when we tried to pull the archived
+  `wp-content/uploads` images.
+- **Tripadvisor has no photos or reviews** for the Grand Tokyu Hotel listing (`d33282887`, 273/274 Aba Road)
+  — it shows "No photos for this property yet".
+- **No OTA listing** with photography was found for Grand Tokyu Hotel (Aba Road).
+
+So the site ships with a set of AI-generated images for the exterior, lobby, rooftop, five room categories
+and The Hall, plus the template's own stock photography for supporting shots — all served locally from
+`images/` and optimised. `MEDIA.md` lists every file and its origin, and `images/official/README.md`
+explains exactly which filename to replace with which official photograph (then re-run
+`node tools/build.js`).
+
+### Two hotels, one name
+
+There is an older, unrelated **Tokyu Grand Hotel** at Off 22 Stadium Road, roughly 4 km from Aba Road — a
+2-star property that opened in 2014 with 102 rooms. Its photos are the ones that dominate a
+"Tokyu Grand Hotel Port Harcourt" image search, and its Google rating, breakfast times and facilities were
+**deliberately excluded** from this site. Likewise, 273/274 Aba Road previously traded as **Claridon Hotels
+& Resorts**; those older listings were not used either. The About page carries a sourcing table that states
+this openly.
+
+## Forms
 
 ## Forms
 
