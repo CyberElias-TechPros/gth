@@ -885,3 +885,38 @@ input[type="date"] { min-height: 46px; }
 @media (max-width: 767.98px) {
   .archive-img, .col-lg-12 .archive-img { height: 240px; }
 }
+
+/* ---------- archive ribbon on heroes & gallery badges ---------- */
+.archive-ribbon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  background: rgba(20, 22, 21, .86);
+  color: #fff;
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+}
+.archive-ribbon .icon { color: var(--gold-soft); font-size: 13px; }
+@media (max-width: 575.98px) {
+  .archive-ribbon { font-size: 9px; padding: 8px 12px; line-height: 1.5; }
+}
+.archive-source {
+  margin-top: 10px;
+  font-size: 11px !important;
+  letter-spacing: .02em;
+  color: #8a938f !important;
+}
+.archive-source .icon { color: var(--gold); margin-right: 4px; }
+.gallery-item .archive-badge { z-index: 3; background: rgba(20, 22, 21, .88); }
+.gallery-item-archive:after { background: linear-gradient(180deg, rgba(20, 22, 21, .1) 30%, rgba(20, 22, 21, .85) 100%); opacity: .8; }
+.gallery-item-archive .cap { opacity: 1; transform: none; }
+.archive-tile figcaption h3 { font-size: 19px; }
+.archive-tile figcaption p { margin-bottom: 0; }

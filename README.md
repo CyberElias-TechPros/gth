@@ -91,10 +91,12 @@ So the site ships with **two clearly separated sets**:
 
 1. **Illustrative marketing imagery** (AI-generated) for the exterior, lobby, rooftop, five room categories
    and The Hall, plus the template's own stock photography for supporting shots — served from `images/`.
-2. **Real archive photographs of the building** — the only genuine pictures of 273/274 Aba Road we could
-   verify, taken when it traded as Claridon Hotels & Resorts. They live in `images/archive/` and are shown
-   on `archive.html` behind an "Archive photo" badge, with a provenance table, a "this is not current
-   photography" warning and a copyright/removal note. They are *not* mixed into the marketing pages. `MEDIA.md` lists every file and its origin, and `images/official/README.md`
+2. **Twelve genuine archive photographs of the building** — the only pictures of 273/274 Aba Road we could
+   verify, taken when it traded as Claridon Hotels & Resorts. They live in `images/archive/` and are used
+   across the site: the full archive on `archive.html` (with per-photo sources), "real building" strips on
+   the home, rooms and about pages, the gallery's **Archive** filter, and the hero images on About, Dining,
+   Contact and Booking. Every appearance is labelled — an "Archive photo" badge on tiles, an
+   "Archive photograph" ribbon on heroes — so they can never be mistaken for current marketing shots. `MEDIA.md` lists every file and its origin, and `images/official/README.md`
 explains exactly which filename to replace with which official photograph (then re-run
 `node tools/build.js`).
 
