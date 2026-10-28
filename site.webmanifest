@@ -1,0 +1,22 @@
+{
+  "name": "Grand Tokyu Hotel",
+  "short_name": "Grand Tokyu",
+  "description": "Hotel on Aba Road, Port Harcourt — rooms, suites, apartment, pool, restaurant and events.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#072a4e",
+  "icons": [
+    {
+      "src": "images/brand/logo-mark.png",
+      "sizes": "160x160",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/brand/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

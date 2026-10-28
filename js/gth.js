@@ -181,12 +181,17 @@
     var tiles = galleryGrid.querySelectorAll('.gallery-item');
     buttons.forEach(function (button) {
       button.addEventListener('click', function () {
-        buttons.forEach(function (b) { b.classList.remove('is-active'); });
+        buttons.forEach(function (b) {
+          b.classList.remove('is-active');
+          b.setAttribute('aria-pressed', 'false');
+        });
         button.classList.add('is-active');
+        button.setAttribute('aria-pressed', 'true');
         var filter = button.dataset.filter;
         tiles.forEach(function (tile) {
           var show = filter === 'all' || tile.dataset.group === filter;
           tile.classList.toggle('is-hidden', !show);
+          tile.setAttribute('aria-hidden', show ? 'false' : 'true');
         });
       });
     });

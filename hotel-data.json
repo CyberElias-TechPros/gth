@@ -1,0 +1,549 @@
+{
+  "name": "Grand Tokyu Hotel",
+  "url": "https://www.grandtokyuhotels.com/",
+  "description": "Hotel on Aba Road, Port Harcourt with five room categories, a courtyard pool, restaurant and bar, and an event hall for up to 200 guests.",
+  "address": {
+    "street": "273/274 Aba Road",
+    "city": "Port Harcourt",
+    "region": "Rivers State",
+    "postalCode": "500272",
+    "country": "Nigeria",
+    "countryCode": "NG"
+  },
+  "geo": {
+    "lat": 4.826,
+    "lng": 7.0226
+  },
+  "contact": {
+    "phone": "+234 091 6000 7896",
+    "phoneAlt": "+234 091 6000 7897",
+    "whatsapp": "https://wa.me/2349160007896",
+    "email": "grandtokyuhotel@gmail.com",
+    "instagram": "https://www.instagram.com/grandtokyu/",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Grand+Tokyu+Hotel+273%2F274+Aba+Road+Port+Harcourt+Nigeria"
+  },
+  "checkin": "12:00",
+  "checkout": "11:00",
+  "currency": "NGN",
+  "priceNote": "Published \"book now from\" starting rates per night; not live availability.",
+  "rooms": [
+    {
+      "name": "Standard Room",
+      "slug": "standard-room",
+      "url": "https://www.grandtokyuhotels.com/room-standard-room.html",
+      "maxAdults": 2,
+      "bed": "King bed",
+      "view": "Courtyard view",
+      "rateFromPerNight": 32000,
+      "currency": "NGN",
+      "amenities": [
+        "40-inch Samsung® LED TV",
+        "Free Wi-Fi",
+        "Non-smoking",
+        "USB charging station",
+        "Work desk"
+      ],
+      "images": [
+        "https://www.grandtokyuhotels.com/images/hotel/room-standard-1.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-standard-3.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-standard-2.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/bathroom-simple.jpg"
+      ]
+    },
+    {
+      "name": "Classic Room",
+      "slug": "classic-room",
+      "url": "https://www.grandtokyuhotels.com/room-classic-room.html",
+      "maxAdults": 3,
+      "bed": "King bed",
+      "view": "City view",
+      "rateFromPerNight": 40000,
+      "currency": "NGN",
+      "amenities": [
+        "40-inch LED TV",
+        "Free Wi-Fi",
+        "Non-smoking",
+        "USB charging station",
+        "Work desk",
+        "Mini bar"
+      ],
+      "images": [
+        "https://www.grandtokyuhotels.com/images/hotel/room-classic-1.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-classic-2.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-classic-3.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/bathroom-basic.jpg"
+      ]
+    },
+    {
+      "name": "Standard Suite Room",
+      "slug": "standard-suite",
+      "url": "https://www.grandtokyuhotels.com/room-standard-suite.html",
+      "maxAdults": 4,
+      "bed": "King bed + sitting area",
+      "view": "City view",
+      "rateFromPerNight": 48000,
+      "currency": "NGN",
+      "amenities": [
+        "King bed",
+        "Sitting area",
+        "City view",
+        "Free Wi-Fi",
+        "Non-smoking",
+        "Smart TV"
+      ],
+      "images": [
+        "https://www.grandtokyuhotels.com/images/hotel/room-executive-1.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-executive-2.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/suite-living-1.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/bathroom-floral.jpg"
+      ]
+    },
+    {
+      "name": "Classic Suite Room",
+      "slug": "classic-suite",
+      "url": "https://www.grandtokyuhotels.com/room-classic-suite.html",
+      "maxAdults": 5,
+      "bed": "King bed + lounge",
+      "view": "City view",
+      "rateFromPerNight": 68000,
+      "currency": "NGN",
+      "amenities": [
+        "King bed",
+        "Lounge area",
+        "Mini bar",
+        "Free Wi-Fi",
+        "Non-smoking",
+        "USB charging station",
+        "Work desk"
+      ],
+      "images": [
+        "https://www.grandtokyuhotels.com/images/hotel/room-deluxe-1.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-deluxe-2.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/suite-living-2.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/bathroom-tub.jpg"
+      ]
+    },
+    {
+      "name": "The Apartment",
+      "slug": "apartment",
+      "url": "https://www.grandtokyuhotels.com/room-apartment.html",
+      "maxAdults": 10,
+      "bed": "2 separate bedrooms",
+      "view": "City view",
+      "rateFromPerNight": 240000,
+      "currency": "NGN",
+      "amenities": [
+        "75-inch LED TV",
+        "Free Wi-Fi",
+        "Full kitchen",
+        "Washing machine",
+        "Dining table",
+        "USB charging station",
+        "Work desk",
+        "City view"
+      ],
+      "images": [
+        "https://www.grandtokyuhotels.com/images/hotel/apartment-living-1.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/apartment-living-2.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/apartment-kitchen-1.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/apartment-dining.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/apartment-living-4.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/bathroom-shower.jpg"
+      ]
+    }
+  ],
+  "eventSpace": {
+    "name": "The Hall",
+    "maxGuests": 200,
+    "rateFromPerNight": 350000,
+    "currency": "NGN",
+    "inclusions": [
+      "4 standing air conditioners",
+      "Free chairs",
+      "Free Wi-Fi",
+      "Flexible layouts",
+      "Catering from the hotel kitchen",
+      "On-site parking",
+      "Dedicated events team"
+    ],
+    "url": "https://www.grandtokyuhotels.com/events.html"
+  },
+  "amenities": [
+    "Free Wi-Fi",
+    "Outdoor swimming pool",
+    "Restaurant (Nigerian and continental)",
+    "Bar and lounge",
+    "Room service",
+    "24-hour front desk",
+    "Air conditioning",
+    "Free on-site parking",
+    "Daily housekeeping",
+    "Event hall for up to 200 guests"
+  ],
+  "faqs": [
+    {
+      "q": "Where exactly is Grand Tokyu Hotel?",
+      "a": "At 273/274 Aba Road, Port Harcourt, Rivers State, Nigeria — roughly five minutes from GRA Junction and ten minutes from Mile 1 Park. Port Harcourt International Airport is about 35 minutes away by taxi."
+    },
+    {
+      "q": "How much does a room cost?",
+      "a": "Published “book now from” rates are ₦32,000 for a Standard Room (2 adults), ₦40,000 for a Classic Room (3 adults), ₦48,000 for a Standard Suite Room (4 adults), ₦68,000 for a Classic Suite Room (5 adults) and ₦240,000 for The Apartment (10 adults), per night. The Hall starts at ₦350,000. Rates change with season and availability."
+    },
+    {
+      "q": "How do I book?",
+      "a": "Call the reservation desk on +234 091 6000 7896 or +234 091 6000 7897, message the hotel on WhatsApp, email grandtokyuhotel@gmail.com, or send a request from the booking page on this site."
+    },
+    {
+      "q": "How many people can each room sleep?",
+      "a": "Standard Room 2 adults, Classic Room 3 adults, Standard Suite Room 4 adults, Classic Suite Room 5 adults and The Apartment 10 adults. The Hall holds up to 200 guests."
+    },
+    {
+      "q": "What time is check-in and check-out?",
+      "a": "Check-in is generally from 12:00 and check-out by 11:00, but the hotel confirms the exact times with every reservation — please check when you book, especially for late arrivals."
+    },
+    {
+      "q": "Do you have a pool, a bar and a restaurant?",
+      "a": "Yes. The hotel has an outdoor courtyard pool with a terrace and sun loungers, a bar and lounge, and a restaurant serving Nigerian and continental cooking, plus room service for house guests."
+    },
+    {
+      "q": "Is there parking and free Wi-Fi?",
+      "a": "Wi-Fi is free throughout the hotel and there is on-site parking for guests. Ask the front desk about airport pick-up and car hire when you book — availability is confirmed with your reservation."
+    },
+    {
+      "q": "Can you host my event or wedding?",
+      "a": "The Hall takes up to 200 guests and comes with four standing air conditioners, free chairs and free Wi-Fi. The team arranges catering, layouts and AV — send your date and guest count through the events page. Smaller gatherings can use the restaurant, lounge or poolside terrace."
+    },
+    {
+      "q": "Are the rates on this site live?",
+      "a": "No. They are the hotel’s published starting rates and are shown for guidance. Availability and final pricing are confirmed by the reservations team."
+    }
+  ],
+  "pages": [
+    {
+      "label": "Home",
+      "url": "https://www.grandtokyuhotels.com/index.html"
+    },
+    {
+      "label": "Rooms",
+      "url": "https://www.grandtokyuhotels.com/rooms.html"
+    },
+    {
+      "label": "Dining",
+      "url": "https://www.grandtokyuhotels.com/restaurant.html"
+    },
+    {
+      "label": "Events",
+      "url": "https://www.grandtokyuhotels.com/events.html"
+    },
+    {
+      "label": "Gallery",
+      "url": "https://www.grandtokyuhotels.com/gallery.html"
+    },
+    {
+      "label": "About",
+      "url": "https://www.grandtokyuhotels.com/about.html"
+    },
+    {
+      "label": "Contact",
+      "url": "https://www.grandtokyuhotels.com/contact.html"
+    }
+  ],
+  "photographs": [
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/exterior-sign.jpg",
+      "caption": "The signboard on Aba Road",
+      "area": "Hotel",
+      "alt": "The Grand Tokyu Hotel signboard above the arched entrance on Aba Road, Port Harcourt"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/exterior-forecourt.jpg",
+      "caption": "The forecourt and drive",
+      "area": "Hotel",
+      "alt": "The hotel forecourt and paved drive with the dark glass façade of Grand Tokyu Hotel behind"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/reception-desk.jpg",
+      "caption": "Reception",
+      "area": "Hotel",
+      "alt": "The reception desk at Grand Tokyu Hotel, with two staff in dark suits behind the counter"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/reception-staff.jpg",
+      "caption": "The front desk team",
+      "area": "Hotel",
+      "alt": "Front-desk staff welcoming arriving guests"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/reception-lobby.jpg",
+      "caption": "Check-in",
+      "area": "Hotel",
+      "alt": "Reception staff at the front desk"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/lounge-tv.jpg",
+      "caption": "The lounge",
+      "area": "Hotel",
+      "alt": "The lounge at Grand Tokyu Hotel: cream sofas around a low table, marble-pattern walls and a wall-mounted television"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/lounge-sofas.jpg",
+      "caption": "Lounge seating",
+      "area": "Hotel",
+      "alt": "Cream upholstered sofas and a round ottoman in the hotel lounge"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/lounge-corner.jpg",
+      "caption": "Lounge corner",
+      "area": "Hotel",
+      "alt": "Corner of the hotel lounge with banquette seating"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-standard-1.jpg",
+      "caption": "Standard Room",
+      "area": "Rooms",
+      "alt": "Standard Room with a king bed and work desk"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-standard-3.jpg",
+      "caption": "Standard Room",
+      "area": "Rooms",
+      "alt": "Standard Room bed with gold cushions"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-classic-1.jpg",
+      "caption": "Classic Room",
+      "area": "Rooms",
+      "alt": "Classic Room with a chevron headboard"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-classic-2.jpg",
+      "caption": "Classic Room",
+      "area": "Rooms",
+      "alt": "Classic Room bed with artwork above"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-classic-3.jpg",
+      "caption": "Classic Room",
+      "area": "Rooms",
+      "alt": "Classic Room with a wall-mounted television"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-executive-1.jpg",
+      "caption": "Standard Suite Room",
+      "area": "Rooms",
+      "alt": "Standard Suite Room with a seating corner"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-executive-2.jpg",
+      "caption": "Standard Suite Room",
+      "area": "Rooms",
+      "alt": "Standard Suite Room with a luggage bench"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-deluxe-1.jpg",
+      "caption": "Classic Suite Room",
+      "area": "Rooms",
+      "alt": "Classic Suite Room with a tufted headboard"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-deluxe-2.jpg",
+      "caption": "Classic Suite Room",
+      "area": "Rooms",
+      "alt": "Classic Suite Room bed with soft throws"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-desk.jpg",
+      "caption": "Work desk",
+      "area": "Rooms",
+      "alt": "A work desk and television in a guest room"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-premium-1.jpg",
+      "caption": "A guest room at night",
+      "area": "Rooms",
+      "alt": "A guest room with blue cove lighting above the bed"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-premium-2.jpg",
+      "caption": "Evening light",
+      "area": "Rooms",
+      "alt": "A guest room with armchair and blue cove lighting"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-premium-3.jpg",
+      "caption": "A guest room",
+      "area": "Rooms",
+      "alt": "A guest room with a bed, curtains and blue ceiling lighting"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/room-bluesuite.jpg",
+      "caption": "Desk and wardrobe",
+      "area": "Rooms",
+      "alt": "A guest room with a desk and blue drapes"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/bathroom-tub.jpg",
+      "caption": "The bathroom",
+      "area": "Rooms",
+      "alt": "A guest bathroom with a bathtub"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/bathroom-shower.jpg",
+      "caption": "Shower bathroom",
+      "area": "Rooms",
+      "alt": "A guest bathroom with a walk-in shower"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/bathroom-vanity.jpg",
+      "caption": "Bathroom vanity",
+      "area": "Rooms",
+      "alt": "A guest bathroom with a mirror and basin"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/apartment-living-1.jpg",
+      "caption": "The Apartment — living room",
+      "area": "Apartment & suites",
+      "alt": "The Apartment living room with black sofas"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/apartment-living-2.jpg",
+      "caption": "The Apartment — lounge",
+      "area": "Apartment & suites",
+      "alt": "The Apartment lounge with a large television"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/apartment-kitchen-1.jpg",
+      "caption": "The Apartment — kitchen",
+      "area": "Apartment & suites",
+      "alt": "The Apartment kitchen with washing machine"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/apartment-kitchen-2.jpg",
+      "caption": "The Apartment — kitchen",
+      "area": "Apartment & suites",
+      "alt": "The Apartment kitchen worktops and sink"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/apartment-dining.jpg",
+      "caption": "The Apartment — dining",
+      "area": "Apartment & suites",
+      "alt": "The Apartment dining table"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/apartment-living-3.jpg",
+      "caption": "The Apartment — sitting area",
+      "area": "Apartment & suites",
+      "alt": "The Apartment seating with a wall-mounted television"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/apartment-living-4.jpg",
+      "caption": "The Apartment — evening",
+      "area": "Apartment & suites",
+      "alt": "The Apartment living room in evening light"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/suite-living-1.jpg",
+      "caption": "Suite sitting area",
+      "area": "Apartment & suites",
+      "alt": "A suite sitting area with leather sofas"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/suite-living-2.jpg",
+      "caption": "Suite lounge",
+      "area": "Apartment & suites",
+      "alt": "A suite lounge with a sofa and television"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/pool-courtyard.jpg",
+      "caption": "The courtyard pool",
+      "area": "Pool & courtyard",
+      "alt": "The outdoor pool in the hotel courtyard, framed by covered walkways and sun loungers"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/pool-from-above.jpg",
+      "caption": "Pool from above",
+      "area": "Pool & courtyard",
+      "alt": "The pool seen from a guest-room balcony"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/pool-corner.jpg",
+      "caption": "Poolside",
+      "area": "Pool & courtyard",
+      "alt": "The courtyard pool seen from the terrace, with loungers along the water"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/pool-loungers.jpg",
+      "caption": "Sun loungers",
+      "area": "Pool & courtyard",
+      "alt": "Red-cushioned sun loungers beside the hotel pool"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/pool-egg-chair.jpg",
+      "caption": "The egg chair",
+      "area": "Pool & courtyard",
+      "alt": "A woven egg chair on the pool deck at Grand Tokyu Hotel"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/pool-leaves.jpg",
+      "caption": "Green corners",
+      "area": "Pool & courtyard",
+      "alt": "The pool framed by a large leaf plant"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/courtyard-terrace.jpg",
+      "caption": "The terrace",
+      "area": "Pool & courtyard",
+      "alt": "Cane chairs and tables on the poolside terrace beneath a planted pergola"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/restaurant-dining.jpg",
+      "caption": "The restaurant",
+      "area": "Dining & bar",
+      "alt": "The air-conditioned restaurant at Grand Tokyu Hotel, set with dark chairs and marble-topped tables"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/restaurant-tables.jpg",
+      "caption": "A table for two",
+      "area": "Dining & bar",
+      "alt": "Dining tables ready for service in the hotel restaurant"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/bar-shelves.jpg",
+      "caption": "The bar",
+      "area": "Dining & bar",
+      "alt": "Backlit shelves of spirits behind the hotel bar"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/bar-shelves-alt.jpg",
+      "caption": "Behind the bar",
+      "area": "Dining & bar",
+      "alt": "The bar at Grand Tokyu Hotel, its illuminated bottle shelves glowing purple and white"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/bar-counter.jpg",
+      "caption": "Evening at the bar",
+      "area": "Dining & bar",
+      "alt": "The bar counter lit in blue"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/lounge-wide.jpg",
+      "caption": "Private hire — the lounge",
+      "area": "Events",
+      "alt": "A wide view of the lounge and bar seating at Grand Tokyu Hotel, lit with blue accent lighting"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/restaurant-dining.jpg",
+      "caption": "Event dining",
+      "area": "Events",
+      "alt": "A function room set for a dinner"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/courtyard-terrace.jpg",
+      "caption": "Drinks receptions",
+      "area": "Events",
+      "alt": "The terrace set for a drinks reception"
+    }
+  ],
+  "llms": "https://www.grandtokyuhotels.com/llms.txt",
+  "updated": "2026-10-28"
+}
