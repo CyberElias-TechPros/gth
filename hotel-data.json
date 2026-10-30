@@ -25,7 +25,7 @@
   "checkin": "12:00",
   "checkout": "11:00",
   "currency": "NGN",
-  "priceNote": "Published \"book now from\" starting rates per night; not live availability.",
+  "priceNote": "Published \"book now from\" rates per night, discounted from the hotel’s full tariff; not live availability.",
   "rooms": [
     {
       "name": "Standard Room",
@@ -34,7 +34,7 @@
       "maxAdults": 2,
       "bed": "King bed",
       "view": "Courtyard view",
-      "rateFromPerNight": 32000,
+      "rateFromPerNight": 37000,
       "currency": "NGN",
       "amenities": [
         "40-inch Samsung® LED TV",
@@ -58,7 +58,7 @@
       "maxAdults": 3,
       "bed": "King bed",
       "view": "City view",
-      "rateFromPerNight": 40000,
+      "rateFromPerNight": 45000,
       "currency": "NGN",
       "amenities": [
         "40-inch LED TV",
@@ -83,7 +83,7 @@
       "maxAdults": 4,
       "bed": "King bed + sitting area",
       "view": "City view",
-      "rateFromPerNight": 48000,
+      "rateFromPerNight": 53000,
       "currency": "NGN",
       "amenities": [
         "King bed",
@@ -110,7 +110,7 @@
       "maxAdults": 5,
       "bed": "King bed + lounge",
       "view": "City view",
-      "rateFromPerNight": 68000,
+      "rateFromPerNight": 73000,
       "currency": "NGN",
       "amenities": [
         "King bed",
@@ -135,7 +135,7 @@
       "maxAdults": 10,
       "bed": "2 separate bedrooms",
       "view": "City view",
-      "rateFromPerNight": 240000,
+      "rateFromPerNight": 250000,
       "currency": "NGN",
       "amenities": [
         "75-inch LED TV",
@@ -192,7 +192,7 @@
     },
     {
       "q": "How much does a room cost?",
-      "a": "Published “book now from” rates are ₦32,000 for a Standard Room (2 adults), ₦40,000 for a Classic Room (3 adults), ₦48,000 for a Standard Suite Room (4 adults), ₦68,000 for a Classic Suite Room (5 adults) and ₦240,000 for The Apartment (10 adults), per night. The Hall starts at ₦350,000. Rates change with season and availability."
+      "a": "Published nightly rates are ₦45,000 for a Standard Room (2 adults), ₦55,000 for a Classic Room (3 adults), ₦65,000 for a Standard Suite Room (4 adults), ₦90,000 for a Classic Suite Room (5 adults) and ₦300,000 for The Apartment (10 adults). The hotel’s current “book now” discount brings those to ₦37,000, ₦45,000, ₦53,000, ₦73,000 and ₦250,000 respectively, per night. The Hall starts at ₦350,000. Rates change with season and availability."
     },
     {
       "q": "How do I book?",

@@ -152,7 +152,8 @@ const PHOTO = {
 
 /* ------------------------------------------------------------------ *
  *  Rooms & spaces
- *  Prices are the hotel's published "Book Now From" nightly rates.
+ *  Nightly rates are from the hotel's October 2026 tariff: "rate" is the full tariff
+ *  price and "from" is the discounted "Book Now From" price.
  *  "max" is the maximum number of adults the hotel states per room.
  * ------------------------------------------------------------------ */
 const SHARED_ROOM_FEATURES = [
@@ -170,7 +171,8 @@ const ROOMS = [
   {
     slug: 'standard-room',
     name: 'Standard Room',
-    from: 32000,
+    from: 37000,
+    rate: 45000,
     max: 2,
     sleeps: '2 adults',
     bed: 'King bed',
@@ -192,7 +194,8 @@ const ROOMS = [
   {
     slug: 'classic-room',
     name: 'Classic Room',
-    from: 40000,
+    from: 45000,
+    rate: 55000,
     max: 3,
     sleeps: '3 adults',
     bed: 'King bed',
@@ -214,7 +217,8 @@ const ROOMS = [
   {
     slug: 'standard-suite',
     name: 'Standard Suite Room',
-    from: 48000,
+    from: 53000,
+    rate: 65000,
     max: 4,
     sleeps: '4 adults',
     bed: 'King bed + sitting area',
@@ -238,7 +242,8 @@ const ROOMS = [
   {
     slug: 'classic-suite',
     name: 'Classic Suite Room',
-    from: 68000,
+    from: 73000,
+    rate: 90000,
     max: 5,
     sleeps: '5 adults',
     bed: 'King bed + lounge',
@@ -259,7 +264,8 @@ const ROOMS = [
   {
     slug: 'apartment',
     name: 'The Apartment',
-    from: 240000,
+    from: 250000,
+    rate: 300000,
     max: 10,
     sleeps: '10 adults',
     bed: '2 separate bedrooms',
@@ -318,6 +324,37 @@ const HALL = {
     'Dedicated events team'
   ]
 };
+
+/* ------------------------------------------------------------------ *
+ *  Outlet hire — rates from the hotel's tariff (events & celebrations)
+ * ------------------------------------------------------------------ */
+const VENUE_HIRE = [
+  {
+    name: 'The Lounge',
+    rate: 200000,
+    note: 'Mini decor is allowed for parties such as weddings and birthdays. Bringing in your own food and drink rents the space at ₦400,000.'
+  },
+  {
+    name: 'The Pool Bar',
+    rate: 150000,
+    note: 'No decor. Deposit the hire rate to use it for drinks; it can also be used for food and drink, but not for private rent.'
+  },
+  {
+    name: 'The Restaurant',
+    rate: 400000,
+    note: 'No decor; small gatherings are allowed. Once paid, food and drink is allowed within this budget.'
+  },
+  {
+    name: 'The Sky Bar',
+    rate: 150000,
+    note: 'With your own DJ, without food and drink. Without a DJ it can be used for drinks; bringing your own food and drink is ₦300,000.'
+  },
+  {
+    name: 'The Mini Hall',
+    rate: 200000,
+    note: 'Guests can bring their own food and drink.'
+  }
+];
 
 /* ------------------------------------------------------------------ *
  *  The kitchen — written descriptions, no stock food photography
@@ -407,7 +444,7 @@ const FAQS = [
   },
   {
     q: 'How much does a room cost?',
-    a: 'Published “book now from” rates are ₦32,000 for a Standard Room (2 adults), ₦40,000 for a Classic Room (3 adults), ₦48,000 for a Standard Suite Room (4 adults), ₦68,000 for a Classic Suite Room (5 adults) and ₦240,000 for The Apartment (10 adults), per night. The Hall starts at ₦350,000. Rates change with season and availability.'
+    a: 'Published nightly rates are ₦45,000 for a Standard Room (2 adults), ₦55,000 for a Classic Room (3 adults), ₦65,000 for a Standard Suite Room (4 adults), ₦90,000 for a Classic Suite Room (5 adults) and ₦300,000 for The Apartment (10 adults). The hotel’s current “book now” discount brings those to ₦37,000, ₦45,000, ₦53,000, ₦73,000 and ₦250,000 respectively, per night. The Hall starts at ₦350,000. Rates change with season and availability.'
   },
   {
     q: 'How do I book?',
@@ -500,6 +537,7 @@ function postalAddress() {
 const HOTEL_IMAGES = [
   IMG('exterior-forecourt'),
   IMG('exterior-sign'),
+  IMG('exterior-front'),
   IMG('reception-desk'),
   IMG('lounge-tv'),
   IMG('restaurant-dining'),
@@ -892,7 +930,7 @@ function roomCard(room) {
 \t\t\t\t\t<article class="room-card w-100">
 \t\t\t\t\t\t<a href="room-${room.slug}.html" class="room-card-img">
 \t\t\t\t\t\t\t<img src="${room.image}" alt="${room.alt}" loading="lazy" width="800" height="533">
-\t\t\t\t\t\t\t<span class="price-tag">From ${money(room.from)}<small>/night</small></span>
+\t\t\t\t\t\t\t<span class="price-tag">${room.rate ? '<s class="rate-was">' + money(room.rate) + '</s> ' : ''}From ${money(room.from)}<small>/night</small></span>
 \t\t\t\t\t\t</a>
 \t\t\t\t\t\t<div class="room-card-body">
 \t\t\t\t\t\t\t<p class="room-max mb-1"><strong>${room.max}</strong> Max Adults</p>
@@ -949,7 +987,7 @@ module.exports = { ROOT, SITE, NAV, ROOMS, HALL, GALLERY, FAQS, POSTS, SHARED_RO
 function buildHome() {
   const slides = [
     {
-      img: IMG('exterior-sign'),
+      img: IMG('exterior-front'),
       kicker: 'Aba Road, Port Harcourt',
       title: 'Hospitality meets heart.',
       text: 'A warm, personal welcome in the middle of the city — and a room that feels like yours.',
@@ -1136,7 +1174,7 @@ function buildHome() {
   const html = `${head({
     title: 'Boutique comfort on Aba Road',
     description:
-      'Grand Tokyu Hotel, 273/274 Aba Road, Port Harcourt — rooms and suites from ₦32,000 a night, a courtyard pool, restaurant, bar and rooftop bar, and The Hall for up to 200 guests. Call +234 091 6000 7896.',
+      'Grand Tokyu Hotel, 273/274 Aba Road, Port Harcourt — rooms and suites from ₦37,000 a night, a courtyard pool, restaurant, bar and rooftop bar, and The Hall for up to 200 guests. Call +234 091 6000 7896.',
     active: 'home',
     file: 'index.html'
   })}
@@ -1210,7 +1248,7 @@ ${servicesHtml}
 \t\t\t\t\t<span class="subheading">Rooms &amp; suites</span>
 \t\t\t\t\t<h2 class="mb-2">Somewhere to come back to</h2>
 \t\t\t\t\t<p class="mb-0">Five categories, from a two-adult Classic to a ten-adult apartment with its own kitchen.
-\t\t\t\t\t\tAll rates are the hotel’s published “book now from” prices per night.</p>
+\t\t\t\t\t\tAll rates are the hotel’s published “book now from” prices per night — struck-through rates are the full tariff.</p>
 \t\t\t\t</div>
 \t\t\t\t<div class="col-md-4 text-md-right ftco-animate mb-3 mb-md-0">
 \t\t\t\t\t<a href="rooms.html" class="btn btn-outline-dark rounded-pill px-4">All rooms &amp; rates</a>
@@ -1438,7 +1476,7 @@ function buildRooms() {
 \t\t\t\t\t\t\t<td><strong>${r.slug ? `<a href="${r.slug === 'the-hall' ? 'events.html' : `room-${r.slug}.html`}">${r.name}</a>` : r.name}</strong></td>
 \t\t\t\t\t\t\t<td>${r.max} adults${r.slug === 'the-hall' ? ' (event guests)' : ''}</td>
 \t\t\t\t\t\t\t<td>${r.bed}</td>
-\t\t\t\t\t\t\t<td class="text-right">${money(r.from)}</td>
+\t\t\t\t\t\t\t<td class="text-right">${r.rate ? '<s class="rate-was">' + money(r.rate) + '</s> ' : ''}${money(r.from)}</td>
 \t\t\t\t\t\t</tr>`
   ).join('');
 
@@ -1451,9 +1489,9 @@ function buildRooms() {
     .join('');
 
   const html = `${head({
-    title: 'Rooms & suites from ₦32,000',
+    title: 'Rooms & suites from ₦37,000',
     description:
-      'Standard and Classic rooms, two suite categories and a two-bedroom apartment with a kitchen at Grand Tokyu Hotel, Port Harcourt — published starting rates from ₦32,000 per night.',
+      'Standard and Classic rooms, two suite categories and a two-bedroom apartment with a kitchen at Grand Tokyu Hotel, Port Harcourt — “book now” rates from ₦37,000 per night, against full tariff rates of ₦45,000 to ₦300,000.',
     active: 'rooms',
     file: 'rooms.html',
     image: IMG('room-classic-1'),
@@ -1472,7 +1510,7 @@ ${pageHero({
     imageAlt: 'Classic Room at Grand Tokyu Hotel',
     crumbs: [{ label: 'Home', href: 'index.html' }, { label: 'Rooms' }],
     title: 'Rooms &amp; suites',
-    subtitle: 'Five categories on Aba Road — from ₦32,000 a night. Prices are the hotel’s published starting rates.'
+    subtitle: 'Five categories on Aba Road — book now from ₦37,000 a night, against full tariff rates of ₦45,000 and up.'
   })}
 
 \t<section class="ftco-section">
@@ -1632,7 +1670,7 @@ ${footer()}`;
 
     const page = `${head({
       title: `${room.name} from ${money(room.from)}`,
-      description: `${room.name} at Grand Tokyu Hotel, Port Harcourt — ${room.sleeps}, ${room.bed}. From ${money(room.from)} per night. ${room.tagline}.`,
+      description: `${room.name} at Grand Tokyu Hotel, Port Harcourt — ${room.sleeps}, ${room.bed}. From ${money(room.from)} per night${room.rate ? ' (full rate ' + money(room.rate) + ')' : ''}. ${room.tagline}.`,
       active: 'rooms',
       file: `room-${room.slug}.html`,
       image: room.image,
@@ -1669,7 +1707,7 @@ ${gallerySlides}
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t\t<div class="col-lg-5 pl-lg-5 ftco-animate">
-\t\t\t\t\t<span class="subheading">Book now from ${money(room.from)} per night</span>
+\t\t\t\t\t<span class="subheading">Book now from ${money(room.from)} per night${room.rate ? ' — full rate ' + money(room.rate) : ''}</span>
 \t\t\t\t\t<h2 class="mb-4">${room.name}</h2>
 \t\t\t\t\t<p>${room.intro}</p>
 \t\t\t\t\t<ul class="spec-list">
@@ -1677,7 +1715,7 @@ ${gallerySlides}
 \t\t\t\t\t\t<li><span>Sleeps</span>${room.sleeps}</li>
 \t\t\t\t\t\t<li><span>Bed</span>${room.bed}</li>
 \t\t\t\t\t\t<li><span>View</span>${room.view}</li>
-\t\t\t\t\t\t<li><span>Rate</span>from ${money(room.from)} / night</li>
+\t\t\t\t\t\t<li><span>Rate</span>${room.rate ? '<s class="rate-was">' + money(room.rate) + '</s> ' : ''}from ${money(room.from)} / night</li>
 \t\t\t\t\t</ul>
 \t\t\t\t\t<a href="booking.html?room=${room.slug}" class="btn btn-primary rounded-pill px-4 mt-2">Book this room</a>
 \t\t\t\t\t<a href="https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(
@@ -2007,6 +2045,14 @@ ${footer()}`;
  *  EVENTS
  * ------------------------------------------------------------------ */
 function buildEvents() {
+  const venueRows = VENUE_HIRE.map(
+    (v) => `\t\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t\t<td><strong>${v.name}</strong></td>
+\t\t\t\t\t\t\t\t<td>${money(v.rate)}</td>
+\t\t\t\t\t\t\t\t<td>${v.note}</td>
+\t\t\t\t\t\t\t</tr>`
+  ).join('');
+
   const layouts = [
     ['Wedding reception', 'Up to 200 guests, round tables'],
     ['Conference / seminar', 'Theatre or boardroom style'],
@@ -2124,6 +2170,24 @@ ${layouts}
 \t\t\t\t\t\t<p class="mb-0"><strong>Also worth knowing:</strong> the lounge, restaurant and poolside terrace can
 \t\t\t\t\t\t\tbe reserved for smaller gatherings, and guest rooms can be blocked for out-of-town attendees.</p>
 \t\t\t\t\t</div>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t\t<div class="row mt-5">
+\t\t\t\t<div class="col-12 ftco-animate">
+\t\t\t\t\t<h3 class="mb-4">Outlet hire rates</h3>
+\t\t\t\t\t<div class="table-responsive rate-table">
+\t\t\t\t\t\t<table class="table">
+\t\t\t\t\t\t\t<caption class="sr-only">Outlet hire rates at Grand Tokyu Hotel</caption>
+\t\t\t\t\t\t\t<thead>
+\t\t\t\t\t\t\t\t<tr><th scope="col">Venue</th><th scope="col">Hire rate</th><th scope="col">Good to know</th></tr>
+\t\t\t\t\t\t\t</thead>
+\t\t\t\t\t\t\t<tbody>
+${venueRows}
+\t\t\t\t\t\t\t</tbody>
+\t\t\t\t\t\t</table>
+\t\t\t\t\t</div>
+\t\t\t\t\t<p class="small text-muted mt-3 mb-0">Rates from the hotel’s tariff; the events team will confirm deposits and
+\t\t\t\t\t\t\tavailability. The Hall — up to ${HALL.max} guests — is hired separately from ${money(HALL.from)}.</p>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -2523,7 +2587,7 @@ ${previewItems}
 \t\t\t\t\t\t\t\t</tr>
 \t\t\t\t\t\t\t\t<tr>
 \t\t\t\t\t\t\t\t\t<td>Room categories, maximum adults per room and published starting rates</td>
-\t\t\t\t\t\t\t\t\t<td>Provided by the hotel (Standard ₦32,000 · Classic ₦40,000 · Standard Suite ₦48,000 · Classic Suite ₦68,000 · Apartment ₦240,000 · Hall ₦350,000)</td>
+\t\t\t\t\t\t\t\t\t<td>Provided by the hotel (book now: Standard ₦37,000 · Classic ₦45,000 · Standard Suite ₦53,000 · Classic Suite ₦73,000 · Apartment ₦250,000 · Hall ₦350,000 — full tariff ₦45,000 to ₦300,000)</td>
 \t\t\t\t\t\t\t\t</tr>
 \t\t\t\t\t\t\t\t<tr>
 \t\t\t\t\t\t\t\t\t<td>Photography</td>
@@ -2593,7 +2657,7 @@ function buildBooking() {
 \t\t\t\t\t\t\t<tr>
 \t\t\t\t\t\t\t\t<td><strong>${r.name}</strong></td>
 \t\t\t\t\t\t\t\t<td>${r.max} adults</td>
-\t\t\t\t\t\t\t\t<td class="text-right">${money(r.from)}</td>
+\t\t\t\t\t\t\t\t<td class="text-right">${r.rate ? '<s class="rate-was">' + money(r.rate) + '</s> ' : ''}${money(r.from)}</td>
 \t\t\t\t\t\t\t</tr>`
   ).join('');
 
@@ -3262,7 +3326,7 @@ function buildMachineFiles() {
     (r) =>
       `- **${r.name}** — max ${r.max} adults, ${r.bed}, ${r.view.toLowerCase()}. Book now from ${money(
         r.from
-      )} per night. Details: ${abs(`room-${r.slug}.html`)}`
+      )} per night (full tariff ${money(r.rate)}). Details: ${abs(`room-${r.slug}.html`)}`
   ).join('\n');
 
   const faqLines = FAQS.map((f) => `**${f.q}**\n${f.a}`).join('\n\n');
@@ -3271,7 +3335,8 @@ function buildMachineFiles() {
 
 > ${SITE.name} is a hotel at ${SITE.address}. Five room categories (Standard Room for 2 adults, Classic
 > Room for 3, Standard Suite Room for 4, Classic Suite Room for 5 and a two-bedroom Apartment for 10)
-> offer published "book now from" rates of ${money(ROOMS[0].from)} to ${money(ROOMS[4].from)} per night.
+> offer published "book now from" rates of ${money(ROOMS[0].from)} to ${money(ROOMS[4].from)} per night, against
+> full tariff rates of ${money(ROOMS[0].rate)} to ${money(ROOMS[4].rate)}.
 > The hotel also has an outdoor courtyard pool, a restaurant serving Nigerian and continental food, a bar
 > and lounge, free Wi-Fi throughout, free on-site parking, a 24-hour front desk, and The Hall — an event
 > space for up to ${HALL.max} guests from ${money(HALL.from)} per night.
@@ -3359,7 +3424,7 @@ Last updated: ${new Date().toISOString().slice(0, 10)}
     checkin: SITE.checkin,
     checkout: SITE.checkout,
     currency: 'NGN',
-    priceNote: 'Published "book now from" starting rates per night; not live availability.',
+    priceNote: 'Published "book now from" rates per night, discounted from the hotel’s full tariff; not live availability.',
     rooms: ROOMS.map((r) => ({
       name: r.name,
       slug: r.slug,
