@@ -11,6 +11,7 @@ what it shows. `images/hotel/README.md` maps every file to a description and a p
 | Exterior | `exterior-sign.jpg`, `exterior-forecourt.jpg` | Home slide 1, About hero, Contact hero, social card |
 | Reception & lounge | `reception-*.jpg`, `lounge-*.jpg` | Home, About, Events, Journal, gallery |
 | Bar & restaurant | `bar-*.jpg`, `restaurant-*.jpg` | Home slide 3, Dining, Events, gallery |
+| Rooftop bar | `rooftop-bar-*.jpg` | Dining page, gallery |
 | Pool & courtyard | `pool-*.jpg`, `courtyard-terrace.jpg` | Home slide 2, home split features, gallery |
 | Guest rooms | `room-standard-*`, `room-classic-*`, `room-executive-*`, `room-deluxe-*`, `room-premium-*`, `room-desk`, `room-bluesuite` | Room cards and pages, booking hero, gallery |
 | Suites & apartment | `suite-living-*`, `apartment-*` | Suite/apartment pages, gallery |

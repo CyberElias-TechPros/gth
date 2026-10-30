@@ -112,6 +112,10 @@ const PHOTO = {
     src: IMG('bar-shelves-alt'),
     alt: 'The bar at Grand Tokyu Hotel, its illuminated bottle shelves glowing purple and white'
   },
+  rooftopBar: {
+    src: IMG('rooftop-bar-1'),
+    alt: 'The rooftop bar at Grand Tokyu Hotel'
+  },
   restaurant: {
     src: IMG('restaurant-dining'),
     alt: 'The air-conditioned restaurant at Grand Tokyu Hotel, set with dark chairs and marble-topped tables'
@@ -173,12 +177,13 @@ const ROOMS = [
     view: 'Courtyard view',
     tagline: 'The easy, comfortable essential',
     image: IMG('room-standard-1'),
-    alt: 'Standard Room at Grand Tokyu Hotel with a king bed, brown runner and a work desk',
+    alt: 'Standard Room at Grand Tokyu Hotel',
     gallery: [
-      { src: IMG('room-standard-1'), alt: 'Standard Room: king bed with white linen and a brown runner' },
-      { src: IMG('room-standard-3'), alt: 'Standard Room: bed dressed with gold cushions and warm lighting' },
-      { src: IMG('room-standard-2'), alt: 'Standard Room: bed and desk beside the window' },
-      { src: IMG('bathroom-simple'), alt: 'Standard Room bathroom with basin, mirror and toilet' }
+      { src: IMG('room-standard-1'), alt: 'Standard Room at Grand Tokyu Hotel — view 1 of 5' },
+      { src: IMG('room-standard-2'), alt: 'Standard Room at Grand Tokyu Hotel — view 2 of 5' },
+      { src: IMG('room-standard-3'), alt: 'Standard Room at Grand Tokyu Hotel — view 3 of 5' },
+      { src: IMG('room-standard-4'), alt: 'Standard Room at Grand Tokyu Hotel — view 4 of 5' },
+      { src: IMG('room-standard-5'), alt: 'Standard Room at Grand Tokyu Hotel — view 5 of 5' }
     ],
     intro:
       'A calm, well-proportioned room with a king bed, crisp linen and everything you need to work, rest and reset. The Standard Room is the simplest way to enjoy Grand Tokyu — bright interiors, quiet air conditioning and a front desk that never sleeps.',
@@ -194,12 +199,13 @@ const ROOMS = [
     view: 'City view',
     tagline: 'A little more room to spread out',
     image: IMG('room-classic-1'),
-    alt: 'Classic Room at Grand Tokyu Hotel with a padded chevron headboard, white bedding and gold accents',
+    alt: 'Classic Room at Grand Tokyu Hotel',
     gallery: [
-      { src: IMG('room-classic-1'), alt: 'Classic Room: chevron-padded headboard with white bedding and gold cushions' },
-      { src: IMG('room-classic-2'), alt: 'Classic Room: bed, artwork and bedside lighting' },
-      { src: IMG('room-classic-3'), alt: 'Classic Room: bed beside the window with air conditioning and television' },
-      { src: IMG('bathroom-basic'), alt: 'Classic Room bathroom with basin, mirror and toilet' }
+      { src: IMG('room-classic-1'), alt: 'Classic Room at Grand Tokyu Hotel — view 1 of 5' },
+      { src: IMG('room-classic-2'), alt: 'Classic Room at Grand Tokyu Hotel — view 2 of 5' },
+      { src: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel — view 3 of 5' },
+      { src: IMG('room-classic-4'), alt: 'Classic Room at Grand Tokyu Hotel — view 4 of 5' },
+      { src: IMG('room-classic-5'), alt: 'Classic Room at Grand Tokyu Hotel — view 5 of 5' }
     ],
     intro:
       'The Classic Room adds breathing space and a dedicated work desk — a favourite for business trips, longer stays and anyone who likes to unpack properly. Warm lighting, soft textiles and a properly stocked minibar make it feel less like a hotel room and more like your own.',
@@ -215,12 +221,15 @@ const ROOMS = [
     view: 'City view',
     tagline: 'Great for families',
     image: IMG('room-executive-1'),
-    alt: 'Standard Suite Room at Grand Tokyu Hotel with a king bed and a separate seating corner',
+    alt: 'Standard Suite Room at Grand Tokyu Hotel',
     gallery: [
-      { src: IMG('room-executive-1'), alt: 'Standard Suite Room: king bed with an armchair and coffee table' },
-      { src: IMG('room-executive-2'), alt: 'Standard Suite Room: bed, luggage bench and dressing mirror' },
-      { src: IMG('suite-living-1'), alt: 'Standard Suite Room sitting area with leather sofas and a television' },
-      { src: IMG('bathroom-floral'), alt: 'Suite bathroom with patterned tiles, basin and shower' }
+      { src: IMG('room-executive-1'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 1 of 7' },
+      { src: IMG('room-executive-2'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 2 of 7' },
+      { src: IMG('room-executive-3'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 3 of 7' },
+      { src: IMG('room-executive-4'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 4 of 7' },
+      { src: IMG('room-executive-5'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 5 of 7' },
+      { src: IMG('room-executive-6'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 6 of 7' },
+      { src: IMG('room-executive-7'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 7 of 7' }
     ],
     intro:
       'A suite built around the way families actually travel: one generous king bedroom, a sitting area to spread out in, and a city view that keeps Port Harcourt close. Book it for a weekend, a family celebration or a stay where the children need their own corner.',
@@ -338,13 +347,13 @@ const GALLERY = [
   { img: IMG('lounge-sofas'), alt: PHOTO.loungeSofas.alt, cap: 'Lounge seating', group: 'Hotel' },
   { img: IMG('lounge-corner'), alt: 'Corner of the hotel lounge with banquette seating', cap: 'Lounge corner', group: 'Hotel' },
 
-  { img: IMG('room-standard-1'), alt: 'Standard Room with a king bed and work desk', cap: 'Standard Room', group: 'Rooms' },
-  { img: IMG('room-standard-3'), alt: 'Standard Room bed with gold cushions', cap: 'Standard Room', group: 'Rooms' },
-  { img: IMG('room-classic-1'), alt: 'Classic Room with a chevron headboard', cap: 'Classic Room', group: 'Rooms' },
-  { img: IMG('room-classic-2'), alt: 'Classic Room bed with artwork above', cap: 'Classic Room', group: 'Rooms' },
-  { img: IMG('room-classic-3'), alt: 'Classic Room with a wall-mounted television', cap: 'Classic Room', group: 'Rooms' },
-  { img: IMG('room-executive-1'), alt: 'Standard Suite Room with a seating corner', cap: 'Standard Suite Room', group: 'Rooms' },
-  { img: IMG('room-executive-2'), alt: 'Standard Suite Room with a luggage bench', cap: 'Standard Suite Room', group: 'Rooms' },
+  { img: IMG('room-standard-1'), alt: 'Standard Room at Grand Tokyu Hotel — view 1 of 5', cap: 'Standard Room', group: 'Rooms' },
+  { img: IMG('room-standard-3'), alt: 'Standard Room at Grand Tokyu Hotel — view 3 of 5', cap: 'Standard Room', group: 'Rooms' },
+  { img: IMG('room-classic-1'), alt: 'Classic Room at Grand Tokyu Hotel — view 1 of 5', cap: 'Classic Room', group: 'Rooms' },
+  { img: IMG('room-classic-2'), alt: 'Classic Room at Grand Tokyu Hotel — view 2 of 5', cap: 'Classic Room', group: 'Rooms' },
+  { img: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel — view 3 of 5', cap: 'Classic Room', group: 'Rooms' },
+  { img: IMG('room-executive-1'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 1 of 7', cap: 'Standard Suite Room', group: 'Rooms' },
+  { img: IMG('room-executive-2'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 2 of 7', cap: 'Standard Suite Room', group: 'Rooms' },
   { img: IMG('room-deluxe-1'), alt: 'Classic Suite Room with a tufted headboard', cap: 'Classic Suite Room', group: 'Rooms' },
   { img: IMG('room-deluxe-2'), alt: 'Classic Suite Room bed with soft throws', cap: 'Classic Suite Room', group: 'Rooms' },
   { img: IMG('room-desk'), alt: 'A work desk and television in a guest room', cap: 'Work desk', group: 'Rooms' },
@@ -379,6 +388,9 @@ const GALLERY = [
   { img: IMG('bar-shelves'), alt: PHOTO.bar.alt, cap: 'The bar', group: 'Dining & bar' },
   { img: IMG('bar-shelves-alt'), alt: PHOTO.barAlt.alt, cap: 'Behind the bar', group: 'Dining & bar' },
   { img: IMG('bar-counter'), alt: 'The bar counter lit in blue', cap: 'Evening at the bar', group: 'Dining & bar' },
+  { img: IMG('rooftop-bar-1'), alt: 'The rooftop bar at Grand Tokyu Hotel — view 1 of 3', cap: 'The rooftop bar', group: 'Dining & bar' },
+  { img: IMG('rooftop-bar-2'), alt: 'The rooftop bar at Grand Tokyu Hotel — view 2 of 3', cap: 'Rooftop bar seating', group: 'Dining & bar' },
+  { img: IMG('rooftop-bar-3'), alt: 'The rooftop bar at Grand Tokyu Hotel — view 3 of 3', cap: 'At the rooftop bar', group: 'Dining & bar' },
 
   { img: IMG('lounge-wide'), alt: PHOTO.loungeWide.alt, cap: 'Private hire — the lounge', group: 'Events' },
   { img: IMG('restaurant-dining'), alt: 'A function room set for a dinner', cap: 'Event dining', group: 'Events' },
@@ -411,7 +423,7 @@ const FAQS = [
   },
   {
     q: 'Do you have a pool, a bar and a restaurant?',
-    a: 'Yes. The hotel has an outdoor courtyard pool with a terrace and sun loungers, a bar and lounge, and a restaurant serving Nigerian and continental cooking, plus room service for house guests.'
+    a: 'Yes. The hotel has an outdoor courtyard pool with a terrace and sun loungers, a bar and lounge, a rooftop bar, and a restaurant serving Nigerian and continental cooking, plus room service for house guests.'
   },
   {
     q: 'Is there parking and free Wi-Fi?',
@@ -457,7 +469,7 @@ const POSTS = [
     date: 'February 2026',
     read: '3 min read',
     img: IMG('room-classic-1'),
-    alt: 'Classic Room with a padded chevron headboard',
+    alt: 'Classic Room at Grand Tokyu Hotel',
     excerpt:
       'From the 75-inch television in The Apartment to the USB charging point beside every bed — a short guide to each room category and who it suits.'
   }
@@ -491,6 +503,7 @@ const HOTEL_IMAGES = [
   IMG('reception-desk'),
   IMG('lounge-tv'),
   IMG('restaurant-dining'),
+  IMG('rooftop-bar-1'),
   IMG('pool-courtyard'),
   IMG('room-standard-1'),
   IMG('room-classic-1'),
@@ -508,7 +521,7 @@ function hotelLd() {
     name: SITE.name,
     alternateName: 'Grand Tokyu Hotel Port Harcourt',
     description:
-      'Grand Tokyu Hotel is a hotel at 273/274 Aba Road, Port Harcourt, Rivers State, Nigeria, with five room categories (Standard, Classic, two suites and a two-bedroom Apartment), an outdoor courtyard pool, a restaurant serving Nigerian and continental food, a bar and lounge, a 24-hour front desk and The Hall event space for up to 200 guests.',
+      'Grand Tokyu Hotel is a hotel at 273/274 Aba Road, Port Harcourt, Rivers State, Nigeria, with five room categories (Standard, Classic, two suites and a two-bedroom Apartment), an outdoor courtyard pool, a restaurant serving Nigerian and continental food, a bar and lounge, a rooftop bar, a 24-hour front desk and The Hall event space for up to 200 guests.',
     url: SITE.base,
     logo: abs('images/brand/logo.png'),
     image: HOTEL_IMAGES.map(abs),
@@ -529,6 +542,7 @@ function hotelLd() {
       'Outdoor swimming pool',
       'Restaurant',
       'Bar and lounge',
+      'Rooftop bar',
       'Room service',
       '24-hour front desk',
       'Air conditioning',
@@ -730,7 +744,7 @@ function footer() {
 \t\t\t\t\t\t\talt="${SITE.name} logo — a blue roundel with a sun over a wave, reading Grand Tokyu Hotel">
 \t\t\t\t\t\t<h2 class="ftco-heading-2">Grand <span class="text-sky">Tokyu</span></h2>
 \t\t\t\t\t\t<p>Hospitality meets heart on Aba Road. Rooms, suites and a two-bedroom apartment, a courtyard pool,
-\t\t\t\t\t\t\ta restaurant serving Nigerian and continental cooking, a bar, and a front desk that never closes.</p>
+\t\t\t\t\t\t\ta restaurant serving Nigerian and continental cooking, a bar and a rooftop bar, and a front desk that never closes.</p>
 \t\t\t\t\t\t<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
 \t\t\t\t\t\t\t<li class="ftco-animate"><a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener" aria-label="Message ${SITE.name} on WhatsApp"><span class="icon-whatsapp"></span></a></li>
 \t\t\t\t\t\t\t<li class="ftco-animate"><a href="${SITE.instagram}" target="_blank" rel="noopener" aria-label="Grand Tokyu Hotel on Instagram"><span class="icon-instagram"></span></a></li>
@@ -958,7 +972,7 @@ function buildHome() {
       img: IMG('restaurant-dining'),
       kicker: 'The restaurant & bar',
       title: 'A table worth staying in.',
-      text: 'Nigerian classics beside continental favourites, and a bar that keeps its own hours.',
+      text: 'Nigerian classics beside continental favourites, a bar that keeps its own hours and a rooftop above the city.',
       cta: 'Dining & bar',
       href: 'restaurant.html',
       cta2: 'Book a table',
@@ -1122,7 +1136,7 @@ function buildHome() {
   const html = `${head({
     title: 'Boutique comfort on Aba Road',
     description:
-      'Grand Tokyu Hotel, 273/274 Aba Road, Port Harcourt — rooms and suites from ₦32,000 a night, a courtyard pool, restaurant and bar, and The Hall for up to 200 guests. Call +234 091 6000 7896.',
+      'Grand Tokyu Hotel, 273/274 Aba Road, Port Harcourt — rooms and suites from ₦32,000 a night, a courtyard pool, restaurant, bar and rooftop bar, and The Hall for up to 200 guests. Call +234 091 6000 7896.',
     active: 'home',
     file: 'index.html'
   })}
@@ -1239,11 +1253,12 @@ ${features}
 \t\t\t\t\t\t<span class="subheading">The restaurant &amp; bar</span>
 \t\t\t\t\t\t<h2 class="mb-4">Local and continental, cooked with care</h2>
 \t\t\t\t\t\t<p>From jollof and grilled fish to a properly rested steak — the kitchen cooks for the way you feel,
-\t\t\t\t\t\t\tnot just the time of day. The bar next door keeps the evening going.</p>
+\t\t\t\t\t\t\tnot just the time of day. The bar next door keeps the evening going — and the rooftop bar takes things higher.</p>
 \t\t\t\t\t\t<ul class="tick-list">
 \t\t\t\t\t\t\t<li><span class="icon-check"></span> Nigerian and continental dishes</li>
 \t\t\t\t\t\t\t<li><span class="icon-check"></span> Breakfast, lunch and dinner</li>
 \t\t\t\t\t\t\t<li><span class="icon-check"></span> Room service for house guests</li>
+\t\t\t\t\t\t\t<li><span class="icon-check"></span> Rooftop bar</li>
 \t\t\t\t\t\t</ul>
 \t\t\t\t\t\t<a href="restaurant.html" class="btn btn-primary rounded-pill px-4">Dining &amp; bar</a>
 \t\t\t\t\t</div>
@@ -1428,8 +1443,8 @@ function buildRooms() {
   ).join('');
 
   const roomPhotos = [
-    { img: IMG('room-standard-2'), alt: 'Standard Room bed and desk', cap: 'Standard Room' },
-    { img: IMG('room-classic-3'), alt: 'Classic Room with a television', cap: 'Classic Room' },
+    { img: IMG('room-standard-2'), alt: 'Standard Room at Grand Tokyu Hotel', cap: 'Standard Room' },
+    { img: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel', cap: 'Classic Room' },
     { img: IMG('suite-living-1'), alt: 'Suite sitting area with leather sofas', cap: 'Suite sitting area' }
   ]
     .map((p) => galleryTile(p))
@@ -1762,6 +1777,11 @@ function buildDining() {
       text: 'Backlit shelves, low seating and cold drinks — the hotel’s evening room, and the one guests linger in.'
     },
     {
+      icon: 'ion-ios-beer',
+      title: 'The Rooftop Bar',
+      text: 'Drinks on the hotel’s roof — a counter, stools and seating above Aba Road.'
+    },
+    {
       icon: 'ion-ios-water',
       title: 'The Poolside Terrace',
       text: 'Light snacks and drinks beside the courtyard pool — the easiest place to lose an afternoon.'
@@ -1798,15 +1818,28 @@ function buildDining() {
     hasMenu: abs('restaurant.html#kitchen')
   };
 
+  const rooftopBarLd = {
+    '@type': 'BarOrPub',
+    '@id': abs('restaurant.html#rooftop-bar'),
+    name: 'The Rooftop Bar at Grand Tokyu Hotel',
+    description: 'A bar above the hotel — its own counter, stools and seating, with Port Harcourt for a view.',
+    url: abs('restaurant.html#rooftop-bar'),
+    image: [abs(IMG('rooftop-bar-1')), abs(IMG('rooftop-bar-2')), abs(IMG('rooftop-bar-3'))],
+    telephone: '+2349160007896',
+    address: postalAddress(),
+    containedInPlace: { '@id': HOTEL_ID }
+  };
+
   const html = `${head({
-    title: 'Restaurant, bar & poolside terrace',
+    title: 'Restaurant, rooftop bar & poolside terrace',
     description:
-      'Dining at Grand Tokyu Hotel, Port Harcourt: a restaurant serving Nigerian and continental dishes, a bar and lounge, and a poolside terrace. Room service for house guests.',
+      'Dining at Grand Tokyu Hotel, Port Harcourt: a restaurant serving Nigerian and continental dishes, a bar and lounge, a rooftop bar, and a poolside terrace. Room service for house guests.',
     active: 'dining',
     file: 'restaurant.html',
     image: IMG('restaurant-dining'),
     jsonLd: [
       restaurantLd,
+      rooftopBarLd,
       breadcrumbLd([
         { label: 'Home', href: 'index.html' },
         { label: 'Dining', href: 'restaurant.html' }
@@ -1821,7 +1854,7 @@ ${pageHero({
     imageAlt: PHOTO.restaurant.alt,
     crumbs: [{ label: 'Home', href: 'index.html' }, { label: 'Dining' }],
     title: 'Dining',
-    subtitle: 'Nigerian and continental cooking, a bar that stays up late and a poolside that is hard to leave.'
+    subtitle: 'Nigerian and continental cooking, a bar that stays up late, a rooftop above the city and a poolside that is hard to leave.'
   })}
 
 \t<section class="ftco-section">
@@ -1859,7 +1892,7 @@ ${pageHero({
 \t\t\t<div class="row justify-content-center mb-5 pb-2">
 \t\t\t\t<div class="col-md-8 heading-section text-center ftco-animate">
 \t\t\t\t\t<span class="subheading">Where to sit</span>
-\t\t\t\t\t<h2>Three places to eat and drink</h2>
+\t\t\t\t\t<h2>Four places to eat and drink</h2>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class="row">
@@ -1904,7 +1937,24 @@ ${kitchenHtml}
 \t\t</div>
 \t</section>
 
-\t<section class="ftco-section">
+\t<section class="ftco-section" id="rooftop-bar">
+\t\t<div class="container">
+\t\t\t<div class="row justify-content-between align-items-end mb-4">
+\t\t\t\t<div class="col-md-8 heading-section ftco-animate">
+\t\t\t\t\t<span class="subheading">The rooftop bar</span>
+\t\t\t\t\t<h2 class="mb-2">The highest seat in the house</h2>
+\t\t\t\t\t<p class="mb-0">A bar above the hotel — its own counter, stools and seating, with Port Harcourt for a view.</p>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t\t<div class="gallery-grid gallery-grid-3">
+\t\t\t\t${galleryTile({ img: IMG('rooftop-bar-1'), alt: 'The rooftop bar at Grand Tokyu Hotel — view 1 of 3', cap: 'The rooftop bar' })}
+\t\t\t\t${galleryTile({ img: IMG('rooftop-bar-2'), alt: 'The rooftop bar at Grand Tokyu Hotel — view 2 of 3', cap: 'Rooftop bar seating' })}
+\t\t\t\t${galleryTile({ img: IMG('rooftop-bar-3'), alt: 'The rooftop bar at Grand Tokyu Hotel — view 3 of 3', cap: 'At the rooftop bar' })}
+\t\t\t</div>
+\t\t</div>
+\t</section>
+
+\t<section class="ftco-section bg-light">
 \t\t<div class="container">
 \t\t\t<div class="row align-items-center">
 \t\t\t\t<div class="col-lg-6 order-lg-last ftco-animate">
@@ -1914,6 +1964,7 @@ ${kitchenHtml}
 \t\t\t\t\t\t\t<li><span>Restaurant</span>breakfast &middot; lunch &middot; dinner</li>
 \t\t\t\t\t\t\t<li><span>Room service</span>for house guests during kitchen hours</li>
 \t\t\t\t\t\t\t<li><span>Bar &amp; lounge</span>into the evening</li>
+\t\t\t\t\t\t\t<li><span>Rooftop bar</span>evenings</li>
 \t\t\t\t\t\t\t<li><span>Poolside terrace</span>daytime</li>
 \t\t\t\t\t\t\t<li><span>Front desk</span>open 24 hours</li>
 \t\t\t\t\t\t</ul>
