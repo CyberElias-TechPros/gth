@@ -45,9 +45,10 @@
       ],
       "images": [
         "https://www.grandtokyuhotels.com/images/hotel/room-standard-1.jpg",
-        "https://www.grandtokyuhotels.com/images/hotel/room-standard-3.jpg",
         "https://www.grandtokyuhotels.com/images/hotel/room-standard-2.jpg",
-        "https://www.grandtokyuhotels.com/images/hotel/bathroom-simple.jpg"
+        "https://www.grandtokyuhotels.com/images/hotel/room-standard-3.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-standard-4.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-standard-5.jpg"
       ]
     },
     {
@@ -302,13 +303,13 @@
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-standard-1.jpg",
       "caption": "Standard Room",
       "area": "Rooms",
-      "alt": "Standard Room with a king bed and work desk"
+      "alt": "Standard Room at Grand Tokyu Hotel — view 1 of 5"
     },
     {
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-standard-3.jpg",
       "caption": "Standard Room",
       "area": "Rooms",
-      "alt": "Standard Room bed with gold cushions"
+      "alt": "Standard Room at Grand Tokyu Hotel — view 3 of 5"
     },
     {
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-classic-1.jpg",

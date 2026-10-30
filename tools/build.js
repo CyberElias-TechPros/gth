@@ -177,12 +177,13 @@ const ROOMS = [
     view: 'Courtyard view',
     tagline: 'The easy, comfortable essential',
     image: IMG('room-standard-1'),
-    alt: 'Standard Room at Grand Tokyu Hotel with a king bed, brown runner and a work desk',
+    alt: 'Standard Room at Grand Tokyu Hotel',
     gallery: [
-      { src: IMG('room-standard-1'), alt: 'Standard Room: king bed with white linen and a brown runner' },
-      { src: IMG('room-standard-3'), alt: 'Standard Room: bed dressed with gold cushions and warm lighting' },
-      { src: IMG('room-standard-2'), alt: 'Standard Room: bed and desk beside the window' },
-      { src: IMG('bathroom-simple'), alt: 'Standard Room bathroom with basin, mirror and toilet' }
+      { src: IMG('room-standard-1'), alt: 'Standard Room at Grand Tokyu Hotel — view 1 of 5' },
+      { src: IMG('room-standard-2'), alt: 'Standard Room at Grand Tokyu Hotel — view 2 of 5' },
+      { src: IMG('room-standard-3'), alt: 'Standard Room at Grand Tokyu Hotel — view 3 of 5' },
+      { src: IMG('room-standard-4'), alt: 'Standard Room at Grand Tokyu Hotel — view 4 of 5' },
+      { src: IMG('room-standard-5'), alt: 'Standard Room at Grand Tokyu Hotel — view 5 of 5' }
     ],
     intro:
       'A calm, well-proportioned room with a king bed, crisp linen and everything you need to work, rest and reset. The Standard Room is the simplest way to enjoy Grand Tokyu — bright interiors, quiet air conditioning and a front desk that never sleeps.',
@@ -343,8 +344,8 @@ const GALLERY = [
   { img: IMG('lounge-sofas'), alt: PHOTO.loungeSofas.alt, cap: 'Lounge seating', group: 'Hotel' },
   { img: IMG('lounge-corner'), alt: 'Corner of the hotel lounge with banquette seating', cap: 'Lounge corner', group: 'Hotel' },
 
-  { img: IMG('room-standard-1'), alt: 'Standard Room with a king bed and work desk', cap: 'Standard Room', group: 'Rooms' },
-  { img: IMG('room-standard-3'), alt: 'Standard Room bed with gold cushions', cap: 'Standard Room', group: 'Rooms' },
+  { img: IMG('room-standard-1'), alt: 'Standard Room at Grand Tokyu Hotel — view 1 of 5', cap: 'Standard Room', group: 'Rooms' },
+  { img: IMG('room-standard-3'), alt: 'Standard Room at Grand Tokyu Hotel — view 3 of 5', cap: 'Standard Room', group: 'Rooms' },
   { img: IMG('room-classic-1'), alt: 'Classic Room at Grand Tokyu Hotel — view 1 of 5', cap: 'Classic Room', group: 'Rooms' },
   { img: IMG('room-classic-2'), alt: 'Classic Room at Grand Tokyu Hotel — view 2 of 5', cap: 'Classic Room', group: 'Rooms' },
   { img: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel — view 3 of 5', cap: 'Classic Room', group: 'Rooms' },
@@ -1439,7 +1440,7 @@ function buildRooms() {
   ).join('');
 
   const roomPhotos = [
-    { img: IMG('room-standard-2'), alt: 'Standard Room bed and desk', cap: 'Standard Room' },
+    { img: IMG('room-standard-2'), alt: 'Standard Room at Grand Tokyu Hotel', cap: 'Standard Room' },
     { img: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel', cap: 'Classic Room' },
     { img: IMG('suite-living-1'), alt: 'Suite sitting area with leather sofas', cap: 'Suite sitting area' }
   ]
