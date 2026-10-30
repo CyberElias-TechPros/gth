@@ -15,6 +15,7 @@ borrowed from another property.
 | `lounge-tv.jpg` | Lounge with cream sofas and a television | Home, About, Journal hero, gallery |
 | `lounge-sofas.jpg`, `lounge-corner.jpg`, `lounge-wide.jpg` | Lounge seating and banquettes | Gallery, Events hero |
 | `bar-shelves.jpg`, `bar-shelves-alt.jpg`, `bar-counter.jpg` | The bar and its lit bottle shelves | Dining, home promise section, gallery |
+| `rooftop-bar-1/2/3.jpg` | The Rooftop Bar — counter, stools and seating (October 2026 set) | Dining page, gallery |
 | `restaurant-dining.jpg` | The restaurant, tables laid | Home slide 3, Dining hero, Events, gallery |
 | `restaurant-tables.jpg` | A laid dining table | Dining, gallery |
 | `pool-courtyard.jpg`, `pool-from-above.jpg`, `pool-corner.jpg`, `pool-leaves.jpg` | The courtyard pool | Home slide 2, Rooms/Home splits, gallery |

@@ -204,7 +204,7 @@
     },
     {
       "q": "Do you have a pool, a bar and a restaurant?",
-      "a": "Yes. The hotel has an outdoor courtyard pool with a terrace and sun loungers, a bar and lounge, and a restaurant serving Nigerian and continental cooking, plus room service for house guests."
+      "a": "Yes. The hotel has an outdoor courtyard pool with a terrace and sun loungers, a bar and lounge, a rooftop bar, and a restaurant serving Nigerian and continental cooking, plus room service for house guests."
     },
     {
       "q": "Is there parking and free Wi-Fi?",
@@ -525,6 +525,24 @@
       "caption": "Evening at the bar",
       "area": "Dining & bar",
       "alt": "The bar counter lit in blue"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/rooftop-bar-1.jpg",
+      "caption": "The rooftop bar",
+      "area": "Dining & bar",
+      "alt": "The rooftop bar at Grand Tokyu Hotel — view 1 of 3"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/rooftop-bar-2.jpg",
+      "caption": "Rooftop bar seating",
+      "area": "Dining & bar",
+      "alt": "The rooftop bar at Grand Tokyu Hotel — view 2 of 3"
+    },
+    {
+      "url": "https://www.grandtokyuhotels.com/images/hotel/rooftop-bar-3.jpg",
+      "caption": "At the rooftop bar",
+      "area": "Dining & bar",
+      "alt": "The rooftop bar at Grand Tokyu Hotel — view 3 of 3"
     },
     {
       "url": "https://www.grandtokyuhotels.com/images/hotel/lounge-wide.jpg",
