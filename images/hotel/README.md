@@ -23,12 +23,13 @@ borrowed from another property.
 | `courtyard-terrace.jpg` | The covered poolside terrace | Dining, Events, gallery |
 | `room-standard-1/2/3/4/5.jpg` | Standard Room (max 2 adults) — the October 2026 five-photo set | Room card, room page, gallery |
 | `room-classic-1/2/3/4/5.jpg` | Classic Room (max 3 adults) — the October 2026 five-photo set: room views plus a bathroom | Room card, room page, gallery |
-| `room-executive-1/2.jpg` | Standard Suite Room (max 4 adults) | Room card, room page, gallery |
+| `room-executive-1/2/3/4/5/6/7.jpg` | Standard Suite Room (max 4 adults) — the October 2026 seven-photo set | Room card, room page, gallery |
 | `room-deluxe-1/2.jpg` | Classic Suite Room (max 5 adults) | Room card, room page, booking hero, gallery |
 | `room-premium-1/2/3.jpg`, `room-bluesuite.jpg`, `room-desk.jpg` | Further guest-room angles | Gallery |
-| `suite-living-1/2.jpg` | Suite sitting areas | Room pages, gallery |
+| `suite-living-1/2.jpg` | Suite sitting areas | Rooms overview, Classic Suite page, gallery (`suite-living-1` no longer sits on the Standard Suite page since its seven-photo set) |
 | `apartment-living-1/2/3/4.jpg`, `apartment-kitchen-1/2.jpg`, `apartment-dining.jpg` | The Apartment (max 10 adults) | Apartment page, gallery |
-| `bathroom-tub.jpg`, `bathroom-shower.jpg`, `bathroom-vanity.jpg`, `bathroom-floral.jpg` | Guest bathrooms | Room pages, gallery |
+| `bathroom-tub.jpg`, `bathroom-shower.jpg`, `bathroom-vanity.jpg` | Guest bathrooms | Room pages, gallery |
+| `bathroom-floral.jpg` | A guest bathroom with patterned tiles | Spare — the Standard Suite Room page now carries the hotel's newer seven-photo set, so this one is not currently placed |
 | `bathroom-simple.jpg` | A simple guest bathroom | Spare — the Standard Room page now carries the hotel's newer five-photo set, so this one is not currently placed |
 | `bathroom-basic.jpg` | A simple guest bathroom | Spare — the Classic Room page now carries the hotel's newer five-photo set, so this one is not currently placed |
 

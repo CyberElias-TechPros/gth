@@ -221,12 +221,15 @@ const ROOMS = [
     view: 'City view',
     tagline: 'Great for families',
     image: IMG('room-executive-1'),
-    alt: 'Standard Suite Room at Grand Tokyu Hotel with a king bed and a separate seating corner',
+    alt: 'Standard Suite Room at Grand Tokyu Hotel',
     gallery: [
-      { src: IMG('room-executive-1'), alt: 'Standard Suite Room: king bed with an armchair and coffee table' },
-      { src: IMG('room-executive-2'), alt: 'Standard Suite Room: bed, luggage bench and dressing mirror' },
-      { src: IMG('suite-living-1'), alt: 'Standard Suite Room sitting area with leather sofas and a television' },
-      { src: IMG('bathroom-floral'), alt: 'Suite bathroom with patterned tiles, basin and shower' }
+      { src: IMG('room-executive-1'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 1 of 7' },
+      { src: IMG('room-executive-2'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 2 of 7' },
+      { src: IMG('room-executive-3'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 3 of 7' },
+      { src: IMG('room-executive-4'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 4 of 7' },
+      { src: IMG('room-executive-5'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 5 of 7' },
+      { src: IMG('room-executive-6'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 6 of 7' },
+      { src: IMG('room-executive-7'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 7 of 7' }
     ],
     intro:
       'A suite built around the way families actually travel: one generous king bedroom, a sitting area to spread out in, and a city view that keeps Port Harcourt close. Book it for a weekend, a family celebration or a stay where the children need their own corner.',
@@ -349,8 +352,8 @@ const GALLERY = [
   { img: IMG('room-classic-1'), alt: 'Classic Room at Grand Tokyu Hotel — view 1 of 5', cap: 'Classic Room', group: 'Rooms' },
   { img: IMG('room-classic-2'), alt: 'Classic Room at Grand Tokyu Hotel — view 2 of 5', cap: 'Classic Room', group: 'Rooms' },
   { img: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel — view 3 of 5', cap: 'Classic Room', group: 'Rooms' },
-  { img: IMG('room-executive-1'), alt: 'Standard Suite Room with a seating corner', cap: 'Standard Suite Room', group: 'Rooms' },
-  { img: IMG('room-executive-2'), alt: 'Standard Suite Room with a luggage bench', cap: 'Standard Suite Room', group: 'Rooms' },
+  { img: IMG('room-executive-1'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 1 of 7', cap: 'Standard Suite Room', group: 'Rooms' },
+  { img: IMG('room-executive-2'), alt: 'Standard Suite Room at Grand Tokyu Hotel — view 2 of 7', cap: 'Standard Suite Room', group: 'Rooms' },
   { img: IMG('room-deluxe-1'), alt: 'Classic Suite Room with a tufted headboard', cap: 'Classic Suite Room', group: 'Rooms' },
   { img: IMG('room-deluxe-2'), alt: 'Classic Suite Room bed with soft throws', cap: 'Classic Suite Room', group: 'Rooms' },
   { img: IMG('room-desk'), alt: 'A work desk and television in a guest room', cap: 'Work desk', group: 'Rooms' },

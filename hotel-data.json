@@ -96,8 +96,11 @@
       "images": [
         "https://www.grandtokyuhotels.com/images/hotel/room-executive-1.jpg",
         "https://www.grandtokyuhotels.com/images/hotel/room-executive-2.jpg",
-        "https://www.grandtokyuhotels.com/images/hotel/suite-living-1.jpg",
-        "https://www.grandtokyuhotels.com/images/hotel/bathroom-floral.jpg"
+        "https://www.grandtokyuhotels.com/images/hotel/room-executive-3.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-executive-4.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-executive-5.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-executive-6.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-executive-7.jpg"
       ]
     },
     {
@@ -333,13 +336,13 @@
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-executive-1.jpg",
       "caption": "Standard Suite Room",
       "area": "Rooms",
-      "alt": "Standard Suite Room with a seating corner"
+      "alt": "Standard Suite Room at Grand Tokyu Hotel — view 1 of 7"
     },
     {
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-executive-2.jpg",
       "caption": "Standard Suite Room",
       "area": "Rooms",
-      "alt": "Standard Suite Room with a luggage bench"
+      "alt": "Standard Suite Room at Grand Tokyu Hotel — view 2 of 7"
     },
     {
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-deluxe-1.jpg",
