@@ -330,6 +330,8 @@ a:hover, a:focus { color: var(--azure); }
   border-left: 2px solid var(--azure);
 }
 .price-tag small { font-size: 10px; opacity: .75; margin-left: 3px; letter-spacing: .06em; }
+.rate-was { text-decoration: line-through; opacity: .55; }
+.price-tag .rate-was { font-size: 11px; margin-right: 5px; font-weight: 500; }
 .room-card-body { padding: 24px 24px 26px; }
 .room-card-body h3 { font-size: 23px; margin-bottom: 6px; }
 .room-card-body h3 a { color: var(--ink); }

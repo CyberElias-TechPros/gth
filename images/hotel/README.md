@@ -7,7 +7,8 @@ borrowed from another property.
 
 | File | What it shows | Used for |
 | --- | --- | --- |
-| `exterior-sign.jpg` | The "Grand Tokyu" signboard above the arched entrance, shot upwards | Home slide 1, Contact hero, gallery |
+| `exterior-front.jpg` | The front of the hotel — the October 2026 lead photograph | Home slide 1 |
+| `exterior-sign.jpg` | The "Grand Tokyu" signboard above the arched entrance, shot upwards | Contact hero, gallery |
 | `exterior-forecourt.jpg` | The forecourt, paved drive and the dark-glass façade | About hero, Journal (getting here), OG card source |
 | `reception-desk.jpg` | The reception desk and staff | Gallery, About, home strip |
 | `reception-lobby.jpg` | Reception from the guest side | Gallery |

@@ -8,7 +8,7 @@ what it shows. `images/hotel/README.md` maps every file to a description and a p
 
 | Set | Files | Where it appears |
 | --- | --- | --- |
-| Exterior | `exterior-sign.jpg`, `exterior-forecourt.jpg` | Home slide 1, About hero, Contact hero, social card |
+| Exterior | `exterior-front.jpg`, `exterior-sign.jpg`, `exterior-forecourt.jpg` | Home slide 1 (front picture), About hero, Contact hero, social card |
 | Reception & lounge | `reception-*.jpg`, `lounge-*.jpg` | Home, About, Events, Journal, gallery |
 | Bar & restaurant | `bar-*.jpg`, `restaurant-*.jpg` | Home slide 3, Dining, Events, gallery |
 | Rooftop bar | `rooftop-bar-*.jpg` | Dining page, gallery |
