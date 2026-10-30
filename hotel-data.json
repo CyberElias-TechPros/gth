@@ -71,7 +71,8 @@
         "https://www.grandtokyuhotels.com/images/hotel/room-classic-1.jpg",
         "https://www.grandtokyuhotels.com/images/hotel/room-classic-2.jpg",
         "https://www.grandtokyuhotels.com/images/hotel/room-classic-3.jpg",
-        "https://www.grandtokyuhotels.com/images/hotel/bathroom-basic.jpg"
+        "https://www.grandtokyuhotels.com/images/hotel/room-classic-4.jpg",
+        "https://www.grandtokyuhotels.com/images/hotel/room-classic-5.jpg"
       ]
     },
     {
@@ -313,19 +314,19 @@
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-classic-1.jpg",
       "caption": "Classic Room",
       "area": "Rooms",
-      "alt": "Classic Room with a chevron headboard"
+      "alt": "Classic Room at Grand Tokyu Hotel — view 1 of 5"
     },
     {
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-classic-2.jpg",
       "caption": "Classic Room",
       "area": "Rooms",
-      "alt": "Classic Room bed with artwork above"
+      "alt": "Classic Room at Grand Tokyu Hotel — view 2 of 5"
     },
     {
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-classic-3.jpg",
       "caption": "Classic Room",
       "area": "Rooms",
-      "alt": "Classic Room with a wall-mounted television"
+      "alt": "Classic Room at Grand Tokyu Hotel — view 3 of 5"
     },
     {
       "url": "https://www.grandtokyuhotels.com/images/hotel/room-executive-1.jpg",
@@ -545,5 +546,5 @@
     }
   ],
   "llms": "https://www.grandtokyuhotels.com/llms.txt",
-  "updated": "2026-10-28"
+  "updated": "2026-10-30"
 }

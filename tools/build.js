@@ -194,12 +194,13 @@ const ROOMS = [
     view: 'City view',
     tagline: 'A little more room to spread out',
     image: IMG('room-classic-1'),
-    alt: 'Classic Room at Grand Tokyu Hotel with a padded chevron headboard, white bedding and gold accents',
+    alt: 'Classic Room at Grand Tokyu Hotel',
     gallery: [
-      { src: IMG('room-classic-1'), alt: 'Classic Room: chevron-padded headboard with white bedding and gold cushions' },
-      { src: IMG('room-classic-2'), alt: 'Classic Room: bed, artwork and bedside lighting' },
-      { src: IMG('room-classic-3'), alt: 'Classic Room: bed beside the window with air conditioning and television' },
-      { src: IMG('bathroom-basic'), alt: 'Classic Room bathroom with basin, mirror and toilet' }
+      { src: IMG('room-classic-1'), alt: 'Classic Room at Grand Tokyu Hotel — view 1 of 5' },
+      { src: IMG('room-classic-2'), alt: 'Classic Room at Grand Tokyu Hotel — view 2 of 5' },
+      { src: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel — view 3 of 5' },
+      { src: IMG('room-classic-4'), alt: 'Classic Room at Grand Tokyu Hotel — view 4 of 5' },
+      { src: IMG('room-classic-5'), alt: 'Classic Room at Grand Tokyu Hotel — view 5 of 5' }
     ],
     intro:
       'The Classic Room adds breathing space and a dedicated work desk — a favourite for business trips, longer stays and anyone who likes to unpack properly. Warm lighting, soft textiles and a properly stocked minibar make it feel less like a hotel room and more like your own.',
@@ -340,9 +341,9 @@ const GALLERY = [
 
   { img: IMG('room-standard-1'), alt: 'Standard Room with a king bed and work desk', cap: 'Standard Room', group: 'Rooms' },
   { img: IMG('room-standard-3'), alt: 'Standard Room bed with gold cushions', cap: 'Standard Room', group: 'Rooms' },
-  { img: IMG('room-classic-1'), alt: 'Classic Room with a chevron headboard', cap: 'Classic Room', group: 'Rooms' },
-  { img: IMG('room-classic-2'), alt: 'Classic Room bed with artwork above', cap: 'Classic Room', group: 'Rooms' },
-  { img: IMG('room-classic-3'), alt: 'Classic Room with a wall-mounted television', cap: 'Classic Room', group: 'Rooms' },
+  { img: IMG('room-classic-1'), alt: 'Classic Room at Grand Tokyu Hotel — view 1 of 5', cap: 'Classic Room', group: 'Rooms' },
+  { img: IMG('room-classic-2'), alt: 'Classic Room at Grand Tokyu Hotel — view 2 of 5', cap: 'Classic Room', group: 'Rooms' },
+  { img: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel — view 3 of 5', cap: 'Classic Room', group: 'Rooms' },
   { img: IMG('room-executive-1'), alt: 'Standard Suite Room with a seating corner', cap: 'Standard Suite Room', group: 'Rooms' },
   { img: IMG('room-executive-2'), alt: 'Standard Suite Room with a luggage bench', cap: 'Standard Suite Room', group: 'Rooms' },
   { img: IMG('room-deluxe-1'), alt: 'Classic Suite Room with a tufted headboard', cap: 'Classic Suite Room', group: 'Rooms' },
@@ -457,7 +458,7 @@ const POSTS = [
     date: 'February 2026',
     read: '3 min read',
     img: IMG('room-classic-1'),
-    alt: 'Classic Room with a padded chevron headboard',
+    alt: 'Classic Room at Grand Tokyu Hotel',
     excerpt:
       'From the 75-inch television in The Apartment to the USB charging point beside every bed — a short guide to each room category and who it suits.'
   }
@@ -1429,7 +1430,7 @@ function buildRooms() {
 
   const roomPhotos = [
     { img: IMG('room-standard-2'), alt: 'Standard Room bed and desk', cap: 'Standard Room' },
-    { img: IMG('room-classic-3'), alt: 'Classic Room with a television', cap: 'Classic Room' },
+    { img: IMG('room-classic-3'), alt: 'Classic Room at Grand Tokyu Hotel', cap: 'Classic Room' },
     { img: IMG('suite-living-1'), alt: 'Suite sitting area with leather sofas', cap: 'Suite sitting area' }
   ]
     .map((p) => galleryTile(p))
