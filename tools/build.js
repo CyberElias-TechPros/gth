@@ -60,6 +60,17 @@ const SITE = {
     'https://www.tripadvisor.com/Hotel_Review-g298363-d33282887-Reviews-Grand_Tokyu_Hotel-Port_Harcourt_Rivers_State.html'
 };
 
+/* ------------------------------------------------------------------ *
+ *  Google AdSense — the publisher ID lives here and nowhere else.
+ *  It feeds the <meta name="google-adsense-account"> tag and the
+ *  adsbygoogle.js loader in every page's <head>, plus /ads.txt.
+ * ------------------------------------------------------------------ */
+const ADSENSE = {
+  client: 'ca-pub-9124992249317290',
+  // Google's certification authority ID for ads.txt — the same for every publisher
+  tagId: 'f08c47fec0942fa0'
+};
+
 const NAV = [
   { key: 'home', label: 'Home', href: 'index.html' },
   { key: 'rooms', label: 'Rooms', href: 'rooms.html' },
@@ -695,6 +706,9 @@ function head({ title, description, active = '', file = '', image = 'images/bran
 \t<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 \t<meta name="author" content="${SITE.name}">
 \t<link rel="canonical" href="${canonical}">
+
+\t<meta name="google-adsense-account" content="${ADSENSE.client}">
+\t<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE.client}" crossorigin="anonymous"></script>
 
 \t<meta property="og:site_name" content="${SITE.name}">
 \t<meta property="og:locale" content="en_NG">
@@ -3554,6 +3568,11 @@ Sitemap: ${abs('sitemap.xml')}
 # Structured data:       ${abs('hotel-data.json')}
 `;
 fs.writeFileSync(path.join(ROOT, 'robots.txt'), robots);
-console.log('  ✓ sitemap.xml, robots.txt');
+
+/* ads.txt — authorises Google AdSense to sell ad space on this domain.
+   The publisher ID is the AdSense client ID without its "ca-" prefix. */
+const adsTxt = `google.com, ${ADSENSE.client.replace(/^ca-/, '')}, DIRECT, ${ADSENSE.tagId}\n`;
+fs.writeFileSync(path.join(ROOT, 'ads.txt'), adsTxt);
+console.log('  ✓ sitemap.xml, robots.txt, ads.txt');
 
 console.log('Done.');

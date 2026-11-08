@@ -46,7 +46,7 @@ python3 -m http.server 8000
 | `blog.html` + `journal-*.html` | Journal index and three guides (getting here, a day out, inside your room) |
 | `llms.txt` | Plain-text summary of the hotel, written for AI assistants |
 | `hotel-data.json` | The same facts as structured JSON |
-| `sitemap.xml`, `robots.txt`, `site.webmanifest` | Generated with the pages |
+| `sitemap.xml`, `robots.txt`, `site.webmanifest`, `ads.txt` | Generated with the pages |
 
 `tools/build.js` regenerates every page from one set of shared data and templates:
 `node tools/build.js`. Edit content there rather than in the generated HTML.
@@ -128,6 +128,23 @@ property. The originals live in `images/hotel/`, the logo and social assets in `
 hand it to WhatsApp (`+234 916 000 7896`) or the guest's email app. Nothing is transmitted by the
 site itself — there is no backend and no data is stored. Wire the forms to a real endpoint if you
 need server-side capture.
+
+## Advertising (Google AdSense)
+
+The site is connected to Google AdSense, publisher `ca-pub-9124992249317290`:
+
+- Every page's `<head>` carries the `google-adsense-account` meta tag and the `adsbygoogle.js`
+  loader.
+- `ads.txt` at the site root authorises Google to sell ad space on the domain:
+  `google.com, pub-9124992249317290, DIRECT, f08c47fec0942fa0`.
+- The publisher ID is set once, in `ADSENSE` near the top of `tools/build.js`. To change it, edit it
+  there and run `node tools/build.js` — don't hand-edit the generated HTML or `ads.txt`, the next
+  build overwrites them.
+- No ad units are hard-coded in the pages. Once AdSense approves the site, switch on Auto ads (or
+  create ad units) from the AdSense dashboard.
+- AdSense sets third-party advertising cookies. Google requires a privacy policy that discloses
+  this, and a Google-certified consent message for visitors from the EEA, UK and Switzerland
+  (AdSense → Privacy & messaging).
 
 ## Licence / attribution
 
