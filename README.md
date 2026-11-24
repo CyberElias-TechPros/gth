@@ -131,12 +131,12 @@ need server-side capture.
 
 ## Advertising (Google AdSense)
 
-The site is connected to Google AdSense, publisher `ca-pub-9124992249317290`:
+The site is connected to Google AdSense, publisher `ca-pub-1270179436380403`:
 
 - Every page's `<head>` carries the `google-adsense-account` meta tag and the `adsbygoogle.js`
   loader.
 - `ads.txt` at the site root authorises Google to sell ad space on the domain:
-  `google.com, pub-9124992249317290, DIRECT, f08c47fec0942fa0`.
+  `google.com, pub-1270179436380403, DIRECT, f08c47fec0942fa0`.
 - The publisher ID is set once, in `ADSENSE` near the top of `tools/build.js`. To change it, edit it
   there and run `node tools/build.js` — don't hand-edit the generated HTML or `ads.txt`, the next
   build overwrites them.

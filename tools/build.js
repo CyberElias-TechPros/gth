@@ -66,7 +66,7 @@ const SITE = {
  *  adsbygoogle.js loader in every page's <head>, plus /ads.txt.
  * ------------------------------------------------------------------ */
 const ADSENSE = {
-  client: 'ca-pub-9124992249317290',
+  client: 'ca-pub-1270179436380403',
   // Google's certification authority ID for ads.txt — the same for every publisher
   tagId: 'f08c47fec0942fa0'
 };
